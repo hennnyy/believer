@@ -1,0 +1,50 @@
+@import url(./common.css);
+
+header {
+  height: 80px;
+  border: 1px solid #222;
+}
+header .inner_container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .depth1 {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .depth1 > li {
+  padding: 0 25px;
+}
+.lang .lang_list {
+  position: relative;
+  display: flex;
+  gap: 22px;
+}
+.lang .lang_list:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 15px;
+  background: #000;
+}
+
+/* footer */
+
+footer {
+  height: 100px;
+  background: #f8f8f8;
+}
+
+footer .copy {
+  height: 100%;
+  text-align: center;
+}
+
+.copy .copy_text {
+  line-height: 100px;
+}
