@@ -3,33 +3,38 @@
 window.onload = function () {
   //언어별 디스플레이
 
-  let koBtn = document.querySelector('.ko_btn');
+  let koBtn = document.querySelectorAll('.ko_btn');
   let koVer = document.querySelectorAll('.ko_version');
-  let enBtn = document.querySelector('.en_btn');
+  let enBtn = document.querySelectorAll('.en_btn');
   let enVer = document.querySelectorAll('.en_version');
-  let moKoBtn = document.querySelector('.mo_kr_btn');
-  let moEnBtn = document.querySelector('.mo_en_btn');
 
-  koBtn.addEventListener('click', function () {
-    enVer.style.display = "none";
-    koVer.style.display = "block";
-    console.log(enVer);
-  })
 
-  enBtn.addEventListener('click', function () {
-    koVer.style.display = "none";
-    enVer.style.display = "block";
-  })
-  moKoBtn.addEventListener('click', function () {
-    enVer.style.display = "none";
-    koVer.style.display = "block";
-    console.log(enVer);
-  })
+  for (let i = 0; i < koBtn.length; i++) {
+    koBtn[i].addEventListener('click', function () {
+      for (let j = 0; j < enVer.length; i++) {
+        enVer[j].style.display = "none";
+        koVer[j].style.display = "block";
+      }
+    })
+  }
+  for (let i = 0; i < enBtn.length; i++) {
+    enBtn[i].addEventListener('click', function () {
+      for (let j = 0; j < koVer.length; i++) {
+        koVer[j].style.display = "none";
+        enVer[j].style.display = "block";
+      }
+    })
+  }
+  // moKoBtn.addEventListener('click', function () {
+  //   enVer.style.display = "none";
+  //   koVer.style.display = "block";
+  //   console.log(enVer);
+  // })
 
-  moEnBtn.addEventListener('click', function () {
-    koVer.style.display = "none";
-    enVer.style.display = "block";
-  })
+  // moEnBtn.addEventListener('click', function () {
+  //   koVer.style.display = "none";
+  //   enVer.style.display = "block";
+  // })
   //고스트메뉴
 
   let menuBtn = document.querySelector('.menu_btn');
