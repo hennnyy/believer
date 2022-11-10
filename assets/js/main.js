@@ -4,22 +4,28 @@ window.onload = function () {
   //언어별 디스플레이
 
   let koBtn = document.querySelectorAll('.ko_btn');
-  let koVer = document.querySelectorAll('.ko_version');
   let enBtn = document.querySelectorAll('.en_btn');
+  let koVer = document.querySelectorAll('.ko_version');
   let enVer = document.querySelectorAll('.en_version');
 
 
+  // console.log(koBtn);
+  // console.log(enBtn);
+  // console.log(koVer);
+  // console.log(enVer);
+
   for (let i = 0; i < koBtn.length; i++) {
     koBtn[i].addEventListener('click', function () {
-      for (let j = 0; j < enVer.length; i++) {
+      for (let j = 0; j < enVer.length; j++) {
         enVer[j].style.display = "none";
         koVer[j].style.display = "block";
       }
     })
   }
+  
   for (let i = 0; i < enBtn.length; i++) {
     enBtn[i].addEventListener('click', function () {
-      for (let j = 0; j < koVer.length; i++) {
+      for (let j = 0; j < koVer.length; j++) {
         koVer[j].style.display = "none";
         enVer[j].style.display = "block";
       }
@@ -35,6 +41,8 @@ window.onload = function () {
   //   koVer.style.display = "none";
   //   enVer.style.display = "block";
   // })
+
+
   //고스트메뉴
 
   let menuBtn = document.querySelector('.menu_btn');
