@@ -4,9 +4,9 @@ window.onload = function () {
   //언어별 디스플레이
 
   let koBtn = document.querySelector('.ko_btn');
-  let koVer = document.querySelector('.ko_version');
+  let koVer = document.querySelectorAll('.ko_version');
   let enBtn = document.querySelector('.en_btn');
-  let enVer = document.querySelector('.en_version');
+  let enVer = document.querySelectorAll('.en_version');
   let moKoBtn = document.querySelector('.mo_kr_btn');
   let moEnBtn = document.querySelector('.mo_en_btn');
 

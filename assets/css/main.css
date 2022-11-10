@@ -321,6 +321,301 @@ header .inner_container {
 
 /* about end  */
 
+/* project */
+.pro_section {
+  margin-bottom: 149px;
+}
+.pro_section .title {
+  margin-bottom: 50px;
+}
+
+.pro_section .project_box {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  display: flex;
+}
+
+.pro_section .project_box .pro_left {
+  width: 20%;
+  padding: 0 36px;
+  text-align: center;
+  border-right: 1px solid #bfbfbf;
+  padding-top: 68px;
+}
+
+.pro_section .project_box .pro_left .left_txt {
+  background: linear-gradient(to right, #f2c6db, white, #c5defb);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.pro_section .project_box .pro_right {
+  width: 80%;
+}
+
+.pro_section .project_box .pro_right .right_one,
+.pro_section .project_box .pro_right .right_two {
+  display: flex;
+  padding: 68px 0 80px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.pro_section .project_box .pro_right .one_txt,
+.pro_section .project_box .pro_right .two_txt {
+  padding: 0 20px;
+}
+
+.pro_line {
+  position: relative;
+  max-height: 1196px;
+}
+.pro_line::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #bfbfbf;
+}
+
+.one_item,
+.two_item {
+  width: 50%;
+}
+
+.one_item img,
+.two_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pro_right .sub_title {
+  margin-bottom: 42px;
+}
+
+.pro_right .right_lounge {
+  padding: 80px 0 80px 20px;
+}
+
+.pro_right .right_lounge .lounge_flex_box {
+  display: flex;
+  margin-top: 40px;
+  column-gap: 20px;
+}
+
+.pro_right .right_lounge .lounge_flex_box .xrc_img,
+.pro_right .right_lounge .lounge_flex_box .vrc_img {
+  max-width: 545px;
+}
+
+.pro_right .right_lounge .lounge_flex_box .xrc_img img,
+.pro_right .right_lounge .lounge_flex_box .vrc_img img {
+  width: 100%;
+}
+
+.pro_right .right_lounge .lounge_flex_box .lounge_txt_box {
+  text-align: center;
+}
+
+.pro_right .right_lounge .lounge_flex_box .lounge_txt_box .lounge_txt_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 36px 0 10px;
+}
+
+.road_section {
+  background-color: #000;
+  padding: 150px 0 135px;
+}
+
+.road_section .title {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.road_section .road_img_pc img {
+  width: 100%;
+}
+
+.road_section .road_img_tab,
+.road_section .road_img_mo {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .pro_section {
+    margin-bottom: 120px;
+  }
+  .pro_section .title {
+    margin-bottom: 30px;
+  }
+
+  .pro_section .project_box .pro_left {
+    display: none;
+  }
+
+  .pro_section .project_box .pro_right {
+    width: 100%;
+  }
+
+  .pro_section .project_box .pro_right .right_one,
+  .pro_section .project_box .pro_right .right_two {
+    padding: 40px 0;
+  }
+
+  .pro_section .project_box .pro_right .one_txt,
+  .pro_section .project_box .pro_right .two_txt {
+    padding: 0;
+  }
+  .pro_section .project_box .pro_right .one_txt {
+    padding-right: 20px;
+  }
+
+  .pro_section .project_box .pro_right .two_txt {
+    padding-left: 20px;
+  }
+
+  .pro_line {
+    max-height: 1196px;
+  }
+
+  .pro_right .sub_title {
+    margin-bottom: 42px;
+  }
+
+  .pro_right .right_lounge {
+    padding: 80px 0 80px 20px;
+  }
+
+  .pro_right .right_lounge .lounge_flex_box {
+    display: flex;
+    margin-top: 40px;
+    column-gap: 20px;
+  }
+
+  .pro_right .right_lounge .lounge_flex_box .xrc,
+  .pro_right .right_lounge .lounge_flex_box .vrc {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  .pro_right .right_lounge .lounge_flex_box .lounge_txt_box .lounge_txt_title {
+    margin: 36px 0 6px;
+  }
+
+  .road_section {
+    padding: 120px 0px;
+  }
+
+  .road_section .title {
+    margin-bottom: 44px;
+  }
+
+  .road_section .road_img_pc,
+  .road_section .road_img_mo {
+    display: none;
+  }
+
+  .road_section .road_img_tab {
+    display: block;
+  }
+
+  .road_section .road_img_tab img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pro_section {
+    margin-bottom: 80px;
+  }
+
+  .pro_section .project_box .pro_right {
+    width: 100%;
+  }
+
+  .pro_section .project_box .pro_right .right_one,
+  .pro_section .project_box .pro_right .right_two {
+    flex-direction: column;
+  }
+  .pro_section .project_box .pro_right .right_two {
+    flex-direction: column-reverse;
+  }
+
+  .pro_section .project_box .pro_right .right_one,
+  .pro_section .project_box .pro_right .right_two {
+    padding: 30px 0;
+  }
+
+  .pro_section .project_box .pro_right .one_txt,
+  .pro_section .project_box .pro_right .two_txt {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .pro_line {
+    max-height: unset;
+  }
+
+  .pro_line::before {
+    display: none;
+  }
+
+  .one_item,
+  .two_item {
+    width: 100%;
+  }
+
+  .pro_right .sub_title {
+    margin-bottom: 20px;
+  }
+
+  .pro_right .right_lounge {
+    padding: 30px 0;
+  }
+
+  .pro_right .right_lounge .lounge_flex_box {
+    flex-direction: column;
+  }
+
+  .pro_right .right_lounge .lounge_flex_box .xrc,
+  .pro_right .right_lounge .lounge_flex_box .vrc {
+    width: 100%;
+  }
+
+  .pro_right .right_lounge .lounge_flex_box .xrc {
+    margin-bottom: 50px;
+  }
+
+  .pro_right .right_lounge .lounge_flex_box .lounge_txt_box .lounge_txt_title {
+    margin: 36px 0 10px;
+  }
+
+  .road_section {
+    padding: 80px 0px;
+  }
+
+  .road_section .title {
+    margin-bottom: 40px;
+  }
+
+  .road_section .road_img_pc,
+  .road_section .road_img_tab {
+    display: none;
+  }
+
+  .road_section .road_img_mo {
+    display: block;
+  }
+
+  .road_section .road_img_mo img {
+    width: 100%;
+  }
+}
+
 /* footer */
 
 footer {
