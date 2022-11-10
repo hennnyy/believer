@@ -4,6 +4,7 @@
 header {
   position: relative;
   height: 80px;
+  z-index: 100;
 }
 header .inner_container {
   display: flex;
@@ -11,6 +12,12 @@ header .inner_container {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+.logo img,
+.logo a,
+.foot_logo a,
+.foot_logo img {
+  height: 100%;
 }
 .nav .depth1 {
   display: flex;
@@ -47,6 +54,9 @@ header .inner_container {
   .nav,
   .lang {
     display: none;
+  }
+  .logo {
+    height: 45px;
   }
   .ghost {
     display: block;
@@ -136,7 +146,11 @@ header .inner_container {
     background: #000;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .logo {
+    height: 38px;
+  }
+}
 /* main  */
 .main .video-wrap {
   width: 100%;
@@ -310,13 +324,24 @@ header .inner_container {
 /* footer */
 
 footer {
-  height: 100px;
+  padding: 15px 0;
   background: #f8f8f8;
 }
 
 footer .foot_logo {
   text-align: center;
-  padding: 17.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .foot_logo {
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .foot_logo {
+    height: 40px;
+  }
 }
 
 /* main  */

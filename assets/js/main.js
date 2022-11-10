@@ -7,6 +7,8 @@ window.onload = function () {
   let koVer = document.querySelector('.ko_version');
   let enBtn = document.querySelector('.en_btn');
   let enVer = document.querySelector('.en_version');
+  let moKoBtn = document.querySelector('.mo_kr_btn');
+  let moEnBtn = document.querySelector('.mo_en_btn');
 
   koBtn.addEventListener('click', function () {
     enVer.style.display = "none";
@@ -15,6 +17,16 @@ window.onload = function () {
   })
 
   enBtn.addEventListener('click', function () {
+    koVer.style.display = "none";
+    enVer.style.display = "block";
+  })
+  moKoBtn.addEventListener('click', function () {
+    enVer.style.display = "none";
+    koVer.style.display = "block";
+    console.log(enVer);
+  })
+
+  moEnBtn.addEventListener('click', function () {
     koVer.style.display = "none";
     enVer.style.display = "block";
   })
