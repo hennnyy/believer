@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Believer</title>
   </head>
   <body>
@@ -12,7 +12,9 @@
       <header>
         <div class="inner_container">
           <h1 class="logo">
-            <a href="javascript:;">LOGO</a>
+            <a href="javascript:;">
+              <img src="./assets/images/logo_header.png" alt="빌리버 로고" />
+            </a>
           </h1>
           <nav class="nav">
             <ul class="depth1">
@@ -24,29 +26,58 @@
           </nav>
           <div class="lang">
             <ul class="lang_list">
-              <li><a href="#ko" class="lang_btn">KO</a></li>
-              <li><a href="#en" class="lang_btn">EN</a></li>
+              <li><a href="javascript:;" class="lang_btn">KO</a></li>
+              <li><a href="javascript:;" class="lang_btn">EN</a></li>
             </ul>
           </div>
+          <div class="ghost">
+            <div class="ghost_btn">
+              <input type="checkbox" id="menuBtn" class="menu_btn" />
+              <label for="menuBtn" class="btn_line">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <div class="ghost_menu">
+              <ul class="ghost_list">
+                <li class="m_underline menu_list">
+                  <a href="javascript:;">HOME</a>
+                </li>
+                <li class="m_underline menu_list">
+                  <a href="javascript:;">ABOUT</a>
+                </li>
+                <li class="m_underline menu_list">
+                  <a href="javascript:;">PROJECT</a>
+                </li>
+                <li class="m_underline menu_list">
+                  <a href="javascript:;">ROADMAP</a>
+                </li>
+              </ul>
+              <ul class="ghost_lang">
+                <li class="m_rightline menu_list">
+                  <a href="javascript:;" class="lang_btn">KO</a>
+                </li>
+                <li class="menu_list">
+                  <a href="javascript:;" class="lang_btn">EN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-
-      <div class="lang_ver ko_version" id="ko">하이</div>
-      <div class="lang_ver en_version" id="en">hi</div>
-
-      <footer>
-        <div
-          class="copy"
-          style="
-            font-family: 'S-CoreDream-3Light', sans-serif;
-            font-weight: 700;
-          "
-        >
-          <p class="copy_text">copyright(c) 2022 All rights reserved</p>
-        </div>
-      </footer>
+      </header>
     </div>
+
+    <div class="lang_ver ko_version" id="ko">안녕</div>
+    <div class="lang_ver en_version" id="en">hi</div>
+
+    <footer>
+      <div class="foot_logo">
+        <a href="javascript:;">
+          <img src="./assets/images/logo_footer.png" alt="빌리버 로고" />
+        </a>
+      </div>
+    </footer>
   </body>
-  <script src="./js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </html>
