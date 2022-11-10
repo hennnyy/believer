@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SCoreDream";
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.inner_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 폰트 설정 */
+
+@font-face {
+  font-family: "EsaManru";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SCoreDream";
+  font-weight: 300;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff)
+      format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SCoreDream";
+  font-weight: 500;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff)
+      format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SCoreDream";
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff)
+      format("woff");
+  font-display: swap;
+}
+
+/* PC */
+.title {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "EsaManru";
+}
+.intro_title {
+  font-size: 35px;
+  font-weight: 700;
+}
+.sub_title {
+  font-size: 28px;
+  font-weight: 700;
+}
+.desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* TAB */
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 60px;
+  }
+  .intro_title {
+    font-size: 28px;
+  }
+  .sub_title {
+    font-size: 20px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+}
+
+/* MO */
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 36px;
+  }
+  .intro_title {
+    font-size: 24px;
+  }
+  .sub_title {
+    font-size: 18px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+}
+
+/* 색상 */
+
+.black {
+  color: #021d25;
+}
+.lightGray {
+  color: #eeeeee;
+}
+.white {
+  color: #fff;
+}
