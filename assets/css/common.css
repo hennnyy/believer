@@ -25,6 +25,12 @@ li {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .inner_container {
+    padding: 0 32px;
+  }
+}
+
 /* 폰트 설정 */
 
 @font-face {
