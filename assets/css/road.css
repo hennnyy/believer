@@ -1,5 +1,6 @@
 .road_section {
   background-color: #000;
+  height: 2200px;
   padding: 150px 0 135px;
 }
 
@@ -7,6 +8,206 @@
   color: #fff;
   margin-bottom: 50px;
 }
+
+.road_pc{
+  width: 1440px;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+}
+
+.date{
+  font-size: 35px;
+}
+
+.day_right_1{
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.day_right_1:hover{
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #a83279;
+}
+
+
+.road_1{
+  position: absolute;
+  left: 51.1%;
+  height: 212px;
+  border-left: 1px solid #fff;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+
+.road_txt_right_1{
+  margin-left: 48px;
+  font-size: 28px;
+}
+
+.day_left_1{
+  position: absolute;
+  left: 32.96%;
+  top: 285px;
+}
+
+.road_2{
+  position: absolute;
+  left: 11.9%;
+  height: 190px;
+  border-right: 1px solid #fff;
+  margin-top: 350px;
+  padding-top: 45px;
+  padding-right: 46px;
+}
+
+.road_txt_left_1{
+  margin-left: 30px; 
+  font-size: 28px;
+  text-align: right;
+}
+
+.vvri_1{
+  position: absolute;
+  right: 493px;
+  top: 310px;
+}
+
+.day_right_2{
+  position: absolute;
+  left: 50%;
+  top: 555px;
+}
+
+.road_3{
+  display: flex;
+  position: absolute;
+  top: 580px;
+}
+
+.road_3 li{
+  display: flex;
+  gap: 30px;
+}
+
+.logo{
+  position: absolute;
+  left: 115%;
+}
+
+.mcn{
+  position: relative;
+  left: 227%;
+  top: 40px;
+  height: 125px;
+  border-left: 1px solid #fff;
+  padding-top: 35px;
+  padding-left: 46px;
+  font-size: 28px;
+}
+
+.entity{
+  font-size: 60px;
+}
+
+.day_left_2{
+  position: absolute;
+  left: 32.96%;
+  top: 755px;
+}
+
+.road_4{
+  position: absolute;
+  left: 12.9%;
+  height: 187px;
+  border-right: 1px solid #fff;
+  margin-top: 820px;
+  padding-top: 45px;
+  padding-right: 46px;
+}
+
+.road_txt_left_2{
+  margin-left: 30px; 
+  font-size: 28px;
+  text-align: right;
+}
+
+.day_right_3{
+  position: absolute;
+  left: 50%;
+  top: 1020px;
+}
+
+.road_5{
+  position: absolute;
+  left: 51.12%;
+  top: 1025px;
+  height: 125px;
+  border-left: 1px solid #fff;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+
+.road_txt_right_3{
+  margin-left: 48px;
+  font-size: 28px;
+}
+
+.day_left_3{
+  position: absolute;
+  left: 37.44%;
+  top: 1225px;
+}
+
+.road_6{
+  position: absolute;
+  left: 19.98%;
+  height: 187px;
+  border-right: 1px solid #fff;
+  margin-top: 1290px;
+  padding-top: 45px;
+  padding-right: 46px;
+}
+
+.road_txt_left_3{
+  margin-left: 30px; 
+  font-size: 28px;
+  text-align: right;
+}
+
+.vvri_2{
+  position: absolute;
+  right: 450px;
+  top: 1250px;
+}
+
+.day_right_4{
+  position: absolute;
+  left: 50%;
+  top: 1490px;
+}
+
+.road_7{
+  position: absolute;
+  left: 51.12%;
+  top: 1495px;
+  height: 193px;
+  border-left: 1px solid #fff;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+
+.road_txt_right_4{
+  margin-left: 48px;
+  font-size: 28px;
+}
+
+/* //pc버전끝 */
+/* /이미지/ */
 
 .road_section .road_img_pc img {
   width: 100%;
