@@ -1,5 +1,3 @@
-// 언어 별 디스플레이
-
 window.onload = function () {
   //언어별 디스플레이
 
@@ -7,12 +5,6 @@ window.onload = function () {
   let enBtn = document.querySelectorAll('.en_btn');
   let koVer = document.querySelectorAll('.ko_version');
   let enVer = document.querySelectorAll('.en_version');
-
-
-  // console.log(koBtn);
-  // console.log(enBtn);
-  // console.log(koVer);
-  // console.log(enVer);
 
   for (let i = 0; i < koBtn.length; i++) {
     koBtn[i].addEventListener('click', function () {
@@ -22,7 +14,7 @@ window.onload = function () {
       }
     })
   }
-  
+
   for (let i = 0; i < enBtn.length; i++) {
     enBtn[i].addEventListener('click', function () {
       for (let j = 0; j < koVer.length; j++) {
@@ -31,17 +23,6 @@ window.onload = function () {
       }
     })
   }
-  // moKoBtn.addEventListener('click', function () {
-  //   enVer.style.display = "none";
-  //   koVer.style.display = "block";
-  //   console.log(enVer);
-  // })
-
-  // moEnBtn.addEventListener('click', function () {
-  //   koVer.style.display = "none";
-  //   enVer.style.display = "block";
-  // })
-
 
   //고스트메뉴
 
@@ -69,3 +50,24 @@ window.onload = function () {
   };
 
 }
+
+window.addEventListener("scroll", function () {
+
+  //스크롤 그라디언트
+
+  let gradient = document.querySelector('.about_gradient');
+  let animeOpacity = document.querySelector('.about_opacity');
+
+  let value = window.scrollY;
+
+  if (window.innerWidth >= 768) {
+    if (value > 700) {
+      gradient.classList.add('active');
+      animeOpacity.classList.add('on');
+    }
+    else {
+      gradient.classList.remove('active');
+      animeOpacity.classList.remove('on');
+    }
+  }
+});

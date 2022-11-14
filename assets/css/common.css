@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -29,14 +30,14 @@ li {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .inner_container {
     padding: 0 32px;
   }
 }
 
 /* 폰트 설정 */
-
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
 @font-face {
   font-family: "EsaManru";
   font-weight: 700;
