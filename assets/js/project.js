@@ -1,11 +1,8 @@
-window.onload = function () {
-  var oneLine = document.querySelector(".right_one");
+window.addEventListener("scroll", function () {
+  var oneLine = document.querySelector(".pro_line1::before");
   console.log(oneLine);
 
-  // if (topPos > )
-  // yOffset = oneLine.addEventListener("scroll", function () {
-    
-  // })\
-  const scrollPer = document.scrollTop();
-  console.log(scrollPer);
-}
+  var heightN = window.scrollY;
+  console.log(heightN)
+  // if(heightN > )
+})
