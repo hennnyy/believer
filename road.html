@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./assets/css/common.css">
   <link rel="stylesheet" href="./assets/css/road.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <section class="road_section" id="roadmap">
@@ -17,9 +18,9 @@
           <!--  -->
           <ul class="timeline_right">
             <li class="timeline-event_right">
-            <label class="timeline-event-icon_right"></label>
+            <label class="timeline-event-icon_right con1"></label>
               <div class="timeline-event-copy_right">
-                <p class="timeline-event-thumbnail_right">2021. 08. 24</p>
+                <p class="timeline-event-thumbnail_right time1" data-text="2021. 08. 24 ">2021. 08. 24</p>
                 <p class="road_txt_right1">
                   베리의 시작인 '춘삼이(사내별명)' 기획 및<br />
                   초기 아바타 디자인 제작
@@ -32,9 +33,9 @@
             <img src="./assets/images/logo_Master.jpg" alt="" class="master">
           </li>
           <li class="timeline-event_right">
-            <label class="timeline-event-icon_right"></label>
+            <label class="timeline-event-icon_right con2"></label>
             <div class="timeline-event-copy_right">
-              <p class="timeline-event-thumbnail_right">2021. 11. 27</p>
+              <p class="timeline-event-thumbnail_right time2" data-text="2021. 11. 27">2021. 11. 27</p>
               <p class="road_txt_right2">
                 '춘삼이' 숏폼 콘텐츠 공개 및 아바타<br />
                 네이밍 공모전 진행 / 'VVRI(베리)' 확정
@@ -42,9 +43,9 @@
             </div>
           </li>
           <li class="timeline-event_right">
-            <label class="timeline-event-icon_right"></label>
+            <label class="timeline-event-icon_right con3"></label>
             <div class="timeline-event-copy_right">
-              <p class="timeline-event-thumbnail_right">2022. 05</p>
+              <p class="timeline-event-thumbnail_right time3" data-text="2022. 05">2022. 05</p>
               <p class="road_txt_right3">'VVRI(베리)' Ver2 캐릭터 탄생</p>
             </div>
           </li>
@@ -52,9 +53,9 @@
           <!--  -->
           <ul class="timeline_left">
             <li class="timeline-event_left">
-            <label class="timeline-event-icon_left"></label>
+            <label class="timeline-event-icon_left con4"></label>
               <div class="timeline-event-copy_left">
-                <p class="timeline-event-thumbnail_left">2021. 06</p>
+                <p class="timeline-event-thumbnail_left time4" data-text="2021. 06">2021. 06</p>
                 <p class="road_txt_left1">
                   (재)전남정보문화산업진흥원<br />
                   실감콘텐츠 MVP 제작지원<br />
@@ -66,16 +67,16 @@
             <img src="./assets/images/vvri_1.png" alt="" class="vvri_1">
           </li>
           <li class="timeline-event_left">
-            <label class="timeline-event-icon_left"></label>
+            <label class="timeline-event-icon_left con5"></label>
             <div class="timeline-event-copy_left">
-              <p class="timeline-event-thumbnail_left">2021. 11. 15</p>
+              <p class="timeline-event-thumbnail_left time5" data-text="2021. 11. 15">2021. 11. 15</p>
               <p class="road_txt_left2">뉴즈와 MCN 계약 체결</p>
             </div>
           </li>
           <li class="timeline-event_left">
-            <label class="timeline-event-icon_left"></label>
+            <label class="timeline-event-icon_left con6"></label>
             <div class="timeline-event-copy_left">
-              <p class="timeline-event-thumbnail_left">2022. 02</p>
+              <p class="timeline-event-thumbnail_left time6" data-text="2022. 02">2022. 02</p>
               <p class="road_txt_left3">'VVRI(베리)' 2D 이미지 공모전</p>
             </div>
           </li>
@@ -83,9 +84,9 @@
             <img src="./assets/images/vvri_2.png" alt="" class="vvri_2">
           </li>
           <li class="timeline-event_left">
-            <label class="timeline-event-icon_left"></label>
+            <label class="timeline-event-icon_left con7"></label>
             <div class="timeline-event-copy_left">
-              <p class="timeline-event-thumbnail_left">2022. 11(공개예정)</p>
+              <p class="timeline-event-thumbnail_left time7" data-text="2022. 11(공개예정)">2022. 11(공개예정)</p>
               <p class="road_txt_left4">
                 VR Chat 베리 전용 공간 Open<br />
                 모질라허브 전시 공간 Open<br />
@@ -97,12 +98,91 @@
           </ul>  
         </div>
         <!-- pc버전끝 -->
-        <div class="road_img_tab">
-          <img src="./assets/images/roadmap_ko_tab.jpg" alt="road_img">
+        <!-- 테블릿버전 -->
+        <div class="inner_container">
+        <div class="road_tab">
+          <ul class="timeline">
+            <li class="timeline-event">
+            <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail" data-text="2021. 06">2021. 06</p>
+                <p class="road_txt1">
+                  (재)전남정보문화산업진흥원<br />
+                  실감콘텐츠 MVP 제작지원<br />
+                  사업을 통해 버츄얼 스트리머 사업 시작
+                </p>
+              </div>
+            </li>
+            <li class="timeline-event">
+            <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail" data-text="2021. 08. 24">2021. 08. 24</p>
+                <p class="road_txt2">
+                  베리의 시작인 '춘삼이(사내별명)' 기획 및<br />
+                  초기 아바타 디자인 제작
+                </p>
+                <img src="./assets/images/vvri_1.png" alt="" class="vvri1">
+              </div>
+            </li>
+            <li class="timeline-event">
+            <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail" data-text="2021. 11. 15">2021. 11. 15</p>
+                <p class="road_txt3">
+                  뉴즈와 MCN 계약 체결
+                </p>
+                <div class="logo_box">
+                  <img src="./assets/images/logo_majors.png" alt="" class="logo1">
+                  <p class="close2"></p>
+                  <img src="./assets/images/logo_Master.jpg" alt="" class="logo2">
+                </div>  
+              </div>
+            </li>
+            <li class="timeline-event">
+            <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail" data-text="2021. 11. 27">2021. 11. 27</p>
+                <p class="road_txt4">
+                '춘삼이' 숏폼 콘텐츠 공개 및 아바타<br />
+                네이밍 공모전 진행 / 'VVRI(베리)' 확정
+                </p>
+              </div>
+            </li>
+            <li class="timeline-event">
+            <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail" data-text="2022. 02">2022. 02</p>
+                <p class="road_txt5">
+                'VVRI(베리)' 2D 이미지 공모전
+                </p>
+              </div>
+            </li>
+            <li class="timeline-event">
+            <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail" data-text="2021. 11. 27">2021. 11. 27</p>
+                <p class="road_txt6">
+                'VVRI(베리)' Ver2 캐릭터 탄생
+                </p>
+                <img src="./assets/images/vvri_2.png" alt="" class="vvri2">
+              </div>
+            </li>
+            <li class="timeline-event">
+            <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail" data-text="2022. 11 (공개예정)">2022. 11 (공개예정)</p>
+                <p class="road_txt7">
+                VR Chat 베리 전용 공간 Open<br />
+                모질라허브 전시 공간 Open<br />
+                베리 테마곡 & 뮤직비디오 제작 중<br />
+                전남 & 베리 여행 테마 6편의 예능형 방송 제작 중
+                </p>
+              </div>
+            </li>
+          </ul>  
         </div>
-        <div class="road_img_mo">
-          <img src="./assets/images/roadmap_ko_mo.jpg" alt="road_img">
         </div>
+
       </div>
     </div>
     <div class="en_version">
@@ -120,5 +200,98 @@
       </div>
     </div>
   </section>
+  
+  <script>
+  window.addEventListener("scroll", function() {
+  let value = window.scrollY;
+  console.log(value);
+  let timeOne = document.querySelector('.time1');
+  let conOne = document.querySelector('.con1');
+  // 
+  let timeTwo = document.querySelector('.time2');
+  let conTwo = document.querySelector('.con2');
+  //
+  let timeThree = document.querySelector('.time3');
+  let conThree = document.querySelector('.con3');
+  //
+  let timeFore = document.querySelector('.time4');
+  let conFore = document.querySelector('.con4');
+  //
+  let timeFive = document.querySelector('.time5');
+  let conFive = document.querySelector('.con5');
+  //
+  let timeSix = document.querySelector('.time6');
+  let conSix = document.querySelector('.con6');
+  //
+  let timeSeven = document.querySelector('.time7');
+  let conSeven = document.querySelector('.con7');
+
+  // console.log(timeline);
+  //왼쪽 스크롤 영역
+
+  if (value >= 200 && value <= 300) {
+    timeOne.classList.add('on');
+    conOne.classList.add('on');
+  } else {
+    timeOne.classList.remove('on');
+    conOne.classList.remove('on');
+  }
+
+  // 두번째스크롤
+  if (value >= 600 && value <= 700) {
+    timeTwo.classList.add('on');
+    conTwo.classList.add('on');
+  } else {
+    timeTwo.classList.remove('on');
+    conTwo.classList.remove('on');
+  }
+  
+  // 세번째스크롤
+  if (value >= 1100 && value <= 1200) {
+    timeThree.classList.add('on');
+    conThree.classList.add('on');
+  } else {
+    timeThree.classList.remove('on');
+    conThree.classList.remove('on');
+  }
+  
+  //오른쪽 스크롤 영역
+  if (value >= 50 && value <= 200) {
+    timeFore.classList.add('on');
+    conFore.classList.add('on');
+  } else {
+    timeFore.classList.remove('on');
+    conFore.classList.remove('on');
+  }
+
+  // 두번째스크롤
+  if (value >= 400 && value <= 500) {
+    timeFive.classList.add('on');
+    conFive.classList.add('on');
+  } else {
+    timeFive.classList.remove('on');
+    conFive.classList.remove('on');
+  }
+
+  //세번째스크롤
+  if (value >= 700 && value <= 900) {
+    timeSix.classList.add('on');
+    conSix.classList.add('on');
+  } else {
+    timeSix.classList.remove('on');
+    conSix.classList.remove('on');
+  }
+
+  //네번째스크롤
+  if (value >= 1300 && value <= 1500) {
+    timeSeven.classList.add('on');
+    conSeven.classList.add('on');
+  } else {
+    timeSeven.classList.remove('on');
+    conSeven.classList.remove('on');
+  }
+})
+  </script>
+
 </body>
 </html>
