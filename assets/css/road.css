@@ -1,6 +1,6 @@
 .road_section {
   background-color: #000;
-  height: 2200px;
+  height: 2300px;
   padding: 150px 0 135px;
 }
 
@@ -13,201 +13,275 @@
   width: 1440px;
   margin: 0 auto;
   color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Layout */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.timeline_right{
+  margin-top: 200px;
+}
+
+.timeline-event_right {
   position: relative;
 }
 
-.date{
-  font-size: 35px;
+.timeline-event_right:nth-child(4){
+  margin-top: 200px;
 }
 
-.day_right_1{
-  position: absolute;
-  left: 50%;
-  top: 0;
-}
 
-.day_right_1:hover{
+.timeline-event_right:hover .timeline-event-icon_right {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   background-color: #a83279;
 }
-
-
-.road_1{
-  position: absolute;
-  left: 51.1%;
-  height: 212px;
-  border-left: 1px solid #fff;
-  margin-top: 60px;
-  padding-top: 40px;
+.timeline-event_right:hover .timeline-event-thumbnail_right {
+  -moz-box-shadow: inset 40em 0 0 0 #a83279;
+  -webkit-box-shadow: inset 40em 0 0 0 #a83279;
+  box-shadow: inset 40em 0 0 0 #a83279;
 }
 
-.road_txt_right_1{
-  margin-left: 48px;
+.timeline-event-copy_right {
+  padding: 2em;
+  position: relative;
+}
+
+.timeline-event-copy_right p:not(.timeline-event-thumbnail_right) {
+  padding-bottom: 1.2em;
+}
+
+.timeline-event-icon_right {
+  -moz-transition: -moz-transform 0.2s ease-in;
+  -o-transition: -o-transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 110px;
+  left: 580px;
+  width: 35px;
+  height: 35px;
+}
+
+.timeline-event-thumbnail_right {
+  -moz-transition: box-shadow 0.5s ease-in 0.1s;
+  -o-transition: box-shadow 0.5s ease-in 0.1s;
+  -webkit-transition: box-shadow 0.5s ease-in;
+  -webkit-transition-delay: 0.1s;
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 35px;
+  background-color: black;
+  -moz-box-shadow: inset 0 0 0 0em #ef795a;
+  -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+  box-shadow: inset 0 0 0 0em #ef795a;
+  display: inline-block;
+  position: relative;
+  top: 72px;
+  left: 289px;
+}
+
+.timeline-event_right:nth-child(4) .timeline-event-thumbnail_right{
+  left: 355px;
+}
+
+.road_txt_right1{
   font-size: 28px;
-}
-
-.day_left_1{
-  position: absolute;
-  left: 32.96%;
-  top: 285px;
-}
-
-.road_2{
-  position: absolute;
-  left: 11.9%;
   height: 190px;
   border-right: 1px solid #fff;
-  margin-top: 350px;
-  padding-top: 45px;
-  padding-right: 46px;
+  padding-right: 60px;
+  padding-top: 30px;
+  margin-right: -74px;
+  position: relative;
+  top: 90px;
+  right: -8px;
+  text-align: right;
 }
 
-.road_txt_left_1{
-  margin-left: 30px; 
+.road_txt_right2{
   font-size: 28px;
+  height: 186px;
+  border-right: 1px solid #fff;
+  padding-right: 60px;
+  padding-top: 30px;
+  margin-right: -74px;
+  position: relative;
+  top: 90px;
+  right: -8px;
   text-align: right;
+}
+
+.road_txt_right3{
+  font-size: 28px;
+  height: 200px;
+  border-right: 1px solid #fff;
+  padding-right: 60px;
+  padding-top: 30px;
+  margin-right: -74px;
+  position: relative;
+  top: 90px;
+  right: -8px;
+  text-align: right;
+}
+
+.timeline-event_right_logo{
+  display: flex;
+  gap: 50px;
+  margin-top: 102px;
+  margin-left: 173px;
+}
+
+.timeline-event_right_logo .close::after{
+  content: '\00d7';
+  font-size: 70px;
+  font-weight: 100;
+}
+
+
+/* 왼쪽섹션 */
+.timeline-event_left {
+  position: relative;
+}
+
+.timeline-event_left:nth-child(4){
+  margin-top: 265px;
+}
+
+.timeline-event_left:nth-child(6){
+  margin-top: 70px;
+}
+
+.timeline-event_left:hover .timeline-event-icon_left{
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #a83279;
+}
+.timeline-event_left:hover .timeline-event-thumbnail_left{
+  -moz-box-shadow: inset 40em 0 0 0 #a83279;
+  -webkit-box-shadow: inset 40em 0 0 0 #a83279;
+  box-shadow: inset 40em 0 0 0 #a83279;
+}
+
+.timeline-event-copy_left {
+  padding: 2em;
+  position: relative;
+  top: -30px;
+  left: 40px;
+  margin-left: 40px;
+}
+
+.timeline-event-copy_left p:not(.timeline-event-thumbnail_left) {
+  padding-bottom: 1.2em;
+}
+
+.timeline-event-icon_left {
+  -moz-transition: -moz-transform 0.2s ease-in;
+  -o-transition: -o-transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 2em;
+  width: 35px;
+  height: 35px;
+}
+
+.timeline-event-thumbnail_left {
+  -moz-transition: box-shadow 0.5s ease-in 0.1s;
+  -o-transition: box-shadow 0.5s ease-in 0.1s;
+  -webkit-transition: box-shadow 0.5s ease-in;
+  -webkit-transition-delay: 0.1s;
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 35px;
+  background-color: black;
+  -moz-box-shadow: inset 0 0 0 0em #ef795a;
+  -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+  box-shadow: inset 0 0 0 0em #ef795a;
+  display: inline-block;
+}
+
+.road_txt_left1{
+  font-size: 28px;
+  height: 212px;
+  border-left: 1px solid #fff;
+  padding-left: 65px;
+  padding-top: 30px;
+  margin-left: -63px;
+  position: relative;
+  top: 20px;
+}
+
+.road_txt_left2{
+  font-size: 28px;
+  height: 124px;
+  border-left: 1px solid #fff;
+  padding-left: 60px;
+  padding-top: 30px;
+  margin-left: -71px;
+  position: relative;
+  top: 20px;
+  left: 8px;
+}
+
+.road_txt_left3{
+  font-size: 28px;
+  height: 124px;
+  border-left: 1px solid #fff;
+  padding-left: 60px;
+  padding-top: 30px;
+  margin-left: -71px;
+  position: relative;
+  top: 20px;
+  left: 8px;
+}
+
+.road_txt_left4{
+  font-size: 28px;
+  height: 192px;
+  border-left: 1px solid #fff;
+  padding-left: 60px;
+  padding-top: 30px;
+  margin-left: -71px;
+  position: relative;
+  top: 20px;
+  left: 8px;
 }
 
 .vvri_1{
-  position: absolute;
-  right: 493px;
-  top: 310px;
-}
-
-.day_right_2{
-  position: absolute;
-  left: 50%;
-  top: 555px;
-}
-
-.road_3{
-  display: flex;
-  position: absolute;
-  top: 580px;
-}
-
-.road_3 li{
-  display: flex;
-  gap: 30px;
-}
-
-.logo{
-  position: absolute;
-  left: 115%;
-}
-
-.mcn{
-  position: relative;
-  left: 227%;
-  top: 40px;
-  height: 125px;
-  border-left: 1px solid #fff;
-  padding-top: 35px;
-  padding-left: 46px;
-  font-size: 28px;
-}
-
-.entity{
-  font-size: 60px;
-}
-
-.day_left_2{
-  position: absolute;
-  left: 32.96%;
-  top: 755px;
-}
-
-.road_4{
-  position: absolute;
-  left: 12.9%;
-  height: 187px;
-  border-right: 1px solid #fff;
-  margin-top: 820px;
-  padding-top: 45px;
-  padding-right: 46px;
-}
-
-.road_txt_left_2{
-  margin-left: 30px; 
-  font-size: 28px;
-  text-align: right;
-}
-
-.day_right_3{
-  position: absolute;
-  left: 50%;
-  top: 1020px;
-}
-
-.road_5{
-  position: absolute;
-  left: 51.12%;
-  top: 1025px;
-  height: 125px;
-  border-left: 1px solid #fff;
-  margin-top: 60px;
-  padding-top: 40px;
-}
-
-.road_txt_right_3{
-  margin-left: 48px;
-  font-size: 28px;
-}
-
-.day_left_3{
-  position: absolute;
-  left: 37.44%;
-  top: 1225px;
-}
-
-.road_6{
-  position: absolute;
-  left: 19.98%;
-  height: 187px;
-  border-right: 1px solid #fff;
-  margin-top: 1290px;
-  padding-top: 45px;
-  padding-right: 46px;
-}
-
-.road_txt_left_3{
-  margin-left: 30px; 
-  font-size: 28px;
-  text-align: right;
+  margin-left: 120px;
+  margin-bottom: 54px;
 }
 
 .vvri_2{
-  position: absolute;
-  right: 450px;
-  top: 1250px;
-}
-
-.day_right_4{
-  position: absolute;
-  left: 50%;
-  top: 1490px;
-}
-
-.road_7{
-  position: absolute;
-  left: 51.12%;
-  top: 1495px;
-  height: 193px;
-  border-left: 1px solid #fff;
-  margin-top: 60px;
-  padding-top: 40px;
-}
-
-.road_txt_right_4{
-  margin-left: 48px;
-  font-size: 28px;
+  margin-left: 120px;
 }
 
 /* //pc버전끝 */
-/* /이미지/ */
+
 
 .road_section .road_img_pc img {
   width: 100%;
