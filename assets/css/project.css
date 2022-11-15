@@ -48,7 +48,7 @@
   height: 1px;
   width: 100%;
   background-color: #bfbfbf;
-  animation: underline 0.5s linear;
+  animation: underline 1s linear;
   text-align: center;
   margin: 0 auto;
   left: 50%;
@@ -108,7 +108,7 @@
   width: 50%;
 }
 
-.one_item img, .two_item img {
+.one_item video, .two_item video {
   width: 100%;
   height: 100%;
   object-fit: contain;
