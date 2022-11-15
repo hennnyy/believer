@@ -108,10 +108,14 @@
   width: 50%;
 }
 
+.one_item video {
+  margin-left: 1px;
+}
+
 .one_item video, .two_item video {
-  width: 100%;
+  width: calc(100% - 1px);
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .pro_right .sub_title {
