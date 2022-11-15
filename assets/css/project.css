@@ -115,7 +115,7 @@
 .one_item video, .two_item video {
   width: calc(100% - 1px);
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .pro_right .sub_title {
