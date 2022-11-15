@@ -60,8 +60,19 @@ window.addEventListener("scroll", function () {
 
   let value = window.scrollY;
 
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth > 1024) {
     if (value > 700) {
+      gradient.classList.add('active');
+      animeOpacity.classList.add('on');
+    }
+    else {
+      gradient.classList.remove('active');
+      animeOpacity.classList.remove('on');
+    }
+  }
+
+  if (window.innerWidth < 1024) {
+    if (value > 500) {
       gradient.classList.add('active');
       animeOpacity.classList.add('on');
     }

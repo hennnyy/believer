@@ -121,6 +121,13 @@ li {
   font-size: 18px;
   font-weight: 400;
 }
+.pc_only {
+  display: block;
+}
+.ta_only,
+.mo_only {
+  display: none;
+}
 
 /* TAB */
 @media screen and (max-width: 1024px) {
@@ -135,6 +142,13 @@ li {
   }
   .desc {
     font-size: 16px;
+  }
+  .pc_only,
+  .mo_only {
+    display: none;
+  }
+  .ta_only {
+    display: block;
   }
 }
 
@@ -151,6 +165,13 @@ li {
   }
   .desc {
     font-size: 16px;
+  }
+  .pc_only,
+  .ta_only {
+    display: none;
+  }
+  .mo_only {
+    display: block;
   }
 }
 
