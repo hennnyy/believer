@@ -36,10 +36,6 @@
   position: relative;
 }
 
-.timeline-event_right:nth-child(3){
-  margin-top: 30px;
-}
-
 .timeline-event_right:nth-child(4){
   margin-top: 140px;
 }
@@ -48,6 +44,8 @@
 .timeline-event-copy_right {
   /* padding: 2em; */
   position: relative;
+  top: 0;
+  left: 0;
 }
 
 .timeline-event-copy_right p:not(.timeline-event-thumbnail_right) {
@@ -67,7 +65,7 @@
   display: block;
   position: absolute;
   top: 106px;
-  left: 540px;
+  left: 97%;
   width: 35px;
   height: 35px;
 }
@@ -85,9 +83,8 @@
   -webkit-box-shadow: inset 0 0 0 0em #ef795a;
   box-shadow: inset 0 0 0 0em #ef795a;
   display: inline-block;
-  position: relative;
-  top: 98px;
-  left: 282px;
+  margin-left: 282px;
+  margin-top: 100px;
 }
 
 .timeline-event-icon_right.on{
@@ -101,8 +98,8 @@
 .timeline-event-thumbnail_right::before{
   content: attr(data-text);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 100px;
+  left: 282px;
   color: #F5A5CB;
   width: 0;
   overflow: hidden;
@@ -115,16 +112,12 @@
 }
 
 
-.timeline-event_right:nth-child(4) .timeline-event-thumbnail_right{
-  left: 355px;
-}
-
 .road_txt_right{
   font-size: 28px;
   border-right: 1px solid #fff;
   padding-top: 30px;
   padding-right: 60px;
-  margin-top: 120px;
+  margin-top: 20px;
   text-align: right;
 }
 
@@ -140,14 +133,11 @@
   height: 200px;
 }
 
-.timeline-event_right_logo{
-  display: flex;
-}
-
 .logo_box{
   display: flex;
   gap: 50px;
   margin-left: 134px;
+  margin-top: 40px;
 }
 
 .timeline-event_right_logo .close::after{
@@ -165,7 +155,7 @@
 }
 
 .timeline-event_left:nth-child(4){
-  margin-top: 295px;
+  margin-top: 305px;
 }
 
 .timeline-event_left:nth-child(6){
@@ -267,10 +257,45 @@
 }
 
 .vvri_2{
-  margin-left: 120px;
+  margin-left: 50px;
 }
 
 /* //pc버전끝 */
+
+@media all and (min-width: 1025px) and (max-width: 1277px){
+  .timeline-event-thumbnail_right{
+    font-size: 28px;
+    margin-left: 51%;
+  }
+
+  .timeline-event-thumbnail_left{
+    font-size: 28px;
+  }
+
+  .road_txt_right, .road_txt_left{
+  font-size: 24px;
+  }
+
+  .timeline-event-icon_right{
+    width: 28px;
+    height: 28px;
+  }
+
+  .timeline-event-icon_left{
+    width: 28px;
+    height: 28px;
+    left: -13px;
+  }
+
+  .logo_box{
+    position: relative;
+    left: -68px;
+  }
+
+  .timeline-event-thumbnail_right::before{
+  left: 51%;
+  }
+}
 
 @media screen and (max-width: 1024px){
   .road_pc{

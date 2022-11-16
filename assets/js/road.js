@@ -37,12 +37,13 @@ window.addEventListener("scroll", function (){
     }
   
     // 두번째스크롤
+    for (let i = 0; i < timeOne.length; i++)
     if (value >= 600 && value <= 700) {
-      timeTwo.classList.add('on');
-      conTwo.classList.add('on');
+      timeTwo[i].classList.add('on');
+      conTwo[i].classList.add('on');
     } else {
-      timeTwo.classList.remove('on');
-      conTwo.classList.remove('on');
+      timeTwo[i].classList.remove('on');
+      conTwo[i].classList.remove('on');
     }
     
     // 세번째스크롤
