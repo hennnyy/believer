@@ -179,9 +179,13 @@
           </div>
           <div class="about-contents">
             <div class="about-img">
-              <div class="about_gradient">
+              <div class="about_gradient"></div>
+              <div class="about_item about_opacity">
                 <div class="about_veri">
-                  <img src="./assets/images/about_veri.png" alt="베리 이미지" />
+                  <img
+                    src="./assets/images/about_veri_02.png"
+                    alt="베리 이미지"
+                  />
                 </div>
                 <div class="about_gear">
                   <img
@@ -189,13 +193,13 @@
                     alt="톱니바퀴 이미지"
                   />
                 </div>
-                <div class="about_circle">
+                <div class="about_circle circle_floating">
                   <img
                     src="./assets/images/about_circle_01.png"
                     alt="타원형 이미지"
                   />
                 </div>
-                <div class="about_chacha">
+                <div class="about_chacha chacha_floating">
                   <img
                     src="./assets/images/about_chacha.png"
                     alt="차차 이미지"
@@ -203,6 +207,32 @@
                 </div>
                 <div class="about_veri_text">
                   <p class="veri_effect">VVRI</p>
+                </div>
+                <div class="about_chacha_text">
+                  <p class="chacha_effect">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      viewBox="0 0 400 400"
+                      class="pc_only"
+                    >
+                      <defs>
+                        <!-- The text path: see links above regarding coordinate system -->
+                        <path
+                          d="M 38 197 C 300 186, 380 300, 450 1500"
+                          id="en_pc_path"
+                        ></path>
+                      </defs>
+
+                      <text>
+                        <!-- This is the magic -->
+                        <textPath startOffset="0" xlink:href="#en_pc_path">
+                          VVRI's pet cat and her best friend 'cha-cha'
+                        </textPath>
+                      </text>
+                    </svg>
+                  </p>
                 </div>
               </div>
             </div>

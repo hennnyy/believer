@@ -51,12 +51,12 @@ window.onload = function () {
 
 }
 
+//스크롤 이벤트
+
 window.addEventListener("scroll", function () {
 
-  //스크롤 그라디언트
-
-  let gradient = document.querySelector('.about_gradient');
-  let animeOpacity = document.querySelector('.about_opacity');
+  let gradient = document.querySelector('.ko_version .about_gradient');
+  let animeOpacity = document.querySelector('.ko_version .about_opacity');
 
   let value = window.scrollY;
 
@@ -81,4 +81,58 @@ window.addEventListener("scroll", function () {
       animeOpacity.classList.remove('on');
     }
   }
+
+  //english
+  let gradientEn = document.querySelector('.en_version .about_gradient');
+  let animeOpacityEn = document.querySelector('.en_version .about_opacity');
+
+  if (window.innerWidth > 1024) {
+    if (value > 700) {
+      gradientEn.classList.add('active');
+      animeOpacityEn.classList.add('on');
+    }
+    else {
+      gradientEn.classList.remove('active');
+      animeOpacityEn.classList.remove('on');
+    }
+  }
+
+  if (window.innerWidth < 1024) {
+    if (value > 500) {
+      gradientEn.classList.add('active');
+      animeOpacityEn.classList.add('on');
+    }
+    else {
+      gradientEn.classList.remove('active');
+      animeOpacityEn.classList.remove('on');
+    }
+  }
 });
+
+// let gradient = document.querySelectorAll('.about_gradient');
+// let animeOpacity = document.querySelectorAll('.about_opacity');
+
+// let value = window.scrollY;
+
+// gradient.forEach(function (gra) {
+//   window.addEventListener('scroll', function () {
+
+//     if (window.innerWidth > 1024) {
+//       if (value > 700) {
+//         gra.classList.add('active');
+//       }
+//       else {
+//         gra.classList.remove('active');
+//       }
+//     }
+
+//     if (window.innerWidth < 1024) {
+//       if (value > 500) {
+//         gra.classList.add('active');
+//       }
+//       else {
+//         gra.classList.remove('active');
+//       }
+//     }
+//   })
+// })
