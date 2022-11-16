@@ -47,62 +47,123 @@ window.addEventListener("scroll", function (){
     }
     
     // 세번째스크롤
+    for (let i = 0; i < timeOne.length; i++)
     if (value >= 1100 && value <= 1200) {
-      timeThree.classList.add('on');
-      conThree.classList.add('on');
+      timeThree[i].classList.add('on');
+      conThree[i].classList.add('on');
     } else {
-      timeThree.classList.remove('on');
-      conThree.classList.remove('on');
+      timeThree[i].classList.remove('on');
+      conThree[i].classList.remove('on');
     }
     
     //오른쪽 스크롤 영역
+    for (let i = 0; i < timeOne.length; i++)
     if (value >= 50 && value <= 200) {
-      timeFore.classList.add('on');
-      conFore.classList.add('on');
+      timeFore[i].classList.add('on');
+      conFore[i].classList.add('on');
     } else {
-      timeFore.classList.remove('on');
-      conFore.classList.remove('on');
+      timeFore[i].classList.remove('on');
+      conFore[i].classList.remove('on');
     }
   
     // 두번째스크롤
+    for (let i = 0; i < timeOne.length; i++)
     if (value >= 400 && value <= 500) {
-      timeFive.classList.add('on');
-      conFive.classList.add('on');
+      timeFive[i].classList.add('on');
+      conFive[i].classList.add('on');
     } else {
-      timeFive.classList.remove('on');
-      conFive.classList.remove('on');
+      timeFive[i].classList.remove('on');
+      conFive[i].classList.remove('on');
     }
   
     //세번째스크롤
+    for (let i = 0; i < timeOne.length; i++)
     if (value >= 700 && value <= 900) {
-      timeSix.classList.add('on');
-      conSix.classList.add('on');
+      timeSix[i].classList.add('on');
+      conSix[i].classList.add('on');
     } else {
-      timeSix.classList.remove('on');
-      conSix.classList.remove('on');
+      timeSix[i].classList.remove('on');
+      conSix[i].classList.remove('on');
     }
   
     //네번째스크롤
+    for (let i = 0; i < timeOne.length; i++)
     if (value >= 1300 && value <= 1500) {
-      timeSeven.classList.add('on');
-      conSeven.classList.add('on');
+      timeSeven[i].classList.add('on');
+      conSeven[i].classList.add('on');
     } else {
-      timeSeven.classList.remove('on');
-      conSeven.classList.remove('on');
+      timeSeven[i].classList.remove('on');
+      conSeven[i].classList.remove('on');
     }
   }
+
+  // 여기부터 테블릿
 
   else if (this.innerWidth > 767) {
+    for (let i = 0; i < timeOne.length; i++)
     if (value >= 50 && value <= 100) {
-      timeOne.classList.add('on');
-      conOne.classList.add('on');
+      timeOne[i].classList.add('on');
+      conOne[i].classList.add('on');
     } else {
-      timeOne.classList.remove('on');
-      conOne.classList.remove('on');
+      timeOne[i].classList.remove('on');
+      conOne[i].classList.remove('on');
     }
-  
   }
 
+  for (let i = 0; i < timeOne.length; i++)
+    if (value >= 180 && value <= 250) {
+      timeTwo[i].classList.add('on');
+      conTwo[i].classList.add('on');
+    } else {
+      timeTwo[i].classList.remove('on');
+      conTwo[i].classList.remove('on');
+    }
+  
+  for (let i = 0; i < timeOne.length; i++)
+    if (value >= 300 && value <= 500) {
+      timeThree[i].classList.add('on');
+      conThree[i].classList.add('on');
+    } else {
+      timeThree[i].classList.remove('on');
+      conThree[i].classList.remove('on');
+    }
+  
+  for (let i = 0; i < timeOne.length; i++)
+    if (value >= 700 && value <= 800) {
+      timeFore[i].classList.add('on');
+      conFore[i].classList.add('on');
+    } else {
+      timeFore[i].classList.remove('on');
+      conFore[i].classList.remove('on');
+    }
+  
+  for (let i = 0; i < timeOne.length; i++)
+    if (value >= 850 && value <= 900) {
+      timeFive[i].classList.add('on');
+      conFive[i].classList.add('on');
+    } else {
+      timeFive[i].classList.remove('on');
+      conFive[i].classList.remove('on');
+    }
+  
+  for (let i = 0; i < timeOne.length; i++)
+    if (value >= 950 && value <= 1100) {
+      timeSix[i].classList.add('on');
+      conSix[i].classList.add('on');
+    } else {
+      timeSix[i].classList.remove('on');
+      conSix[i].classList.remove('on');
+    }
+  
+  for (let i = 0; i < timeOne.length; i++)
+    if (value >= 1200 && value <= 1300) {
+      timeSeven[i].classList.add('on');
+      conSeven[i].classList.add('on');
+    } else {
+      timeSeven[i].classList.remove('on');
+      conSeven[i].classList.remove('on');
+    }
+  
   
 })
 

@@ -38,6 +38,7 @@
 
 .timeline-event_right:nth-child(4){
   margin-top: 140px;
+  margin-left: 60px;
 }
 
 
@@ -213,8 +214,8 @@
 .timeline-event-thumbnail_left::before{
   content: attr(data-text);
   position: absolute;
-  top: 32px;
-  left: 32px;
+  top: 0px;
+  left: 60px;
   color: #F5A5CB;
   width: 0;
   overflow: hidden;
@@ -370,8 +371,8 @@
   .timeline-event-thumbnail::before{
     content: attr(data-text);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: 65px;
     color: #F5A5CB;
     width: 0;
     overflow: hidden;
@@ -592,5 +593,18 @@
   padding-top: 15px;
   margin-left: 19px;
   }
+
+  .timeline-event-thumbnail::before{
+    content: attr(data-text);
+    position: absolute;
+    top: -4px;
+    left: 55px;
+    color: #F5A5CB;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.7s ease-out;
+  }
+
 }
 
