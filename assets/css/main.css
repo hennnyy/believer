@@ -991,7 +991,7 @@ svg {
 /* project END */
 
 /* roadmap */
-.road_tab {
+.road_tab{
   display: none;
 }
 
@@ -1005,13 +1005,14 @@ svg {
   margin-bottom: 50px;
 }
 
-.road_pc {
+.road_pc{
   max-width: 1440px;
   margin: 0 auto;
   color: #fff;
   display: flex;
   justify-content: center;
 }
+
 
 /* Layout */
 * {
@@ -1020,7 +1021,7 @@ svg {
   box-sizing: border-box;
 }
 
-.timeline_right {
+.timeline_right{
   margin-top: 200px;
 }
 
@@ -1028,10 +1029,11 @@ svg {
   position: relative;
 }
 
-.timeline-event_right:nth-child(4) {
+.timeline-event_right:nth-child(4){
   margin-top: 140px;
   margin-left: 60px;
 }
+
 
 .timeline-event-copy_right {
   /* padding: 2em; */
@@ -1079,31 +1081,32 @@ svg {
   margin-top: 100px;
 }
 
-.timeline-event-icon_right.on {
+.timeline-event-icon_right.on{
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background-color: #f5a5cb;
+  background-color:  #F5A5CB;
 }
 
-.timeline-event-thumbnail_right::before {
+.timeline-event-thumbnail_right::before{
   content: attr(data-text);
   position: absolute;
   top: 100px;
   left: 282px;
-  color: #f5a5cb;
+  color: #F5A5CB;
   width: 0;
   overflow: hidden;
   white-space: nowrap;
   transition: 0.7s ease-out;
 }
 
-.timeline-event-thumbnail_right.on:before {
+.timeline-event-thumbnail_right.on:before{
   width: 100%;
 }
 
-.road_txt_right {
+
+.road_txt_right{
   font-size: 28px;
   border-right: 1px solid #fff;
   padding-top: 30px;
@@ -1112,30 +1115,32 @@ svg {
   text-align: right;
 }
 
-.right1 {
+.right1{
   height: 190px;
 }
 
-.right2 {
+.right2{
   height: 186px;
 }
 
-.right3 {
+.right3{
   height: 200px;
 }
 
-.logo_box {
+.logo_box{
   display: flex;
   gap: 50px;
   margin-left: 134px;
   margin-top: 40px;
 }
 
-.timeline-event_right_logo .close::after {
-  content: "\00d7";
+.timeline-event_right_logo .close::after{
+  content: '\00d7';
   font-size: 70px;
   font-weight: 100;
 }
+
+
 
 /* 왼쪽섹션 */
 
@@ -1143,11 +1148,11 @@ svg {
   position: relative;
 }
 
-.timeline-event_left:nth-child(4) {
+.timeline-event_left:nth-child(4){
   margin-top: 305px;
 }
 
-.timeline-event_left:nth-child(6) {
+.timeline-event_left:nth-child(6){
   margin-top: 120px;
 }
 
@@ -1189,33 +1194,34 @@ svg {
   box-shadow: inset 0 0 0 0em #ef795a;
   display: inline-block;
   margin-left: 60px;
+  position: relative;
 }
 
-.timeline-event-icon_left.on {
+.timeline-event-icon_left.on{
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background-color: #f5a5cb;
+  background-color:  #F5A5CB;
 }
 
-.timeline-event-thumbnail_left::before {
+.timeline-event-thumbnail_left::before{
   content: attr(data-text);
   position: absolute;
   top: 0px;
-  left: 60px;
-  color: #f5a5cb;
+  left: 0px;
+  color: #F5A5CB;
   width: 0;
   overflow: hidden;
   white-space: nowrap;
   transition: 0.7s ease-in;
 }
 
-.timeline-event-thumbnail_left.on:before {
+.timeline-event-thumbnail_left.on:before{
   width: 100%;
 }
 
-.road_txt_left {
+.road_txt_left{
   font-size: 28px;
   border-left: 1px solid #fff;
   padding-top: 30px;
@@ -1223,97 +1229,92 @@ svg {
   margin-top: 20px;
 }
 
-.left1 {
+.left1{
   height: 212px;
 }
 
-.left2 {
+.left2{
   height: 124px;
 }
 
-.left3 {
+.left3{
   height: 124px;
 }
 
-.left4 {
+.left4{
   height: 192px;
 }
 
-.vvri_1 {
+.vvri_1{
   margin-left: 60px;
   margin-bottom: 54px;
   margin-top: 42px;
 }
 
-.vvri_2 {
+.vvri_2{
   margin-left: 50px;
 }
 
 /* //pc버전끝 */
 
-@media all and (min-width: 1025px) and (max-width: 1277px) {
-  .timeline-event-thumbnail_right {
+@media all and (min-width: 1025px) and (max-width: 1277px){
+  .timeline-event-thumbnail_right{
     font-size: 28px;
     margin-left: 51%;
   }
 
-  .timeline-event-thumbnail_left {
+  .timeline-event-thumbnail_left{
     font-size: 28px;
   }
 
-  .road_txt_right,
-  .road_txt_left {
-    font-size: 24px;
+  .road_txt_right, .road_txt_left{
+  font-size: 24px;
   }
 
-  .timeline-event-icon_right {
+  .timeline-event-icon_right{
     width: 28px;
     height: 28px;
   }
 
-  .timeline-event-icon_left {
+  .timeline-event-icon_left{
     width: 28px;
     height: 28px;
     left: -13px;
   }
 
-  .logo_box {
+  .logo_box{
     position: relative;
     left: -68px;
   }
 
-  .timeline-event-thumbnail_right::before {
-    left: 51%;
+  .timeline-event-thumbnail_right::before{
+  left: 51%;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .road_pc {
+@media screen and (max-width: 1024px){
+  .road_pc{
     display: none;
   }
 
-  .road_tab {
+  .road_tab{
     display: block;
     color: #fff;
   }
-
-  .timeline-event {
+  
+  .timeline-event{
     position: relative;
   }
 
-  .timeline-event:nth-child(2),
-  .timeline-event:nth-child(3),
-  .timeline-event:nth-child(5),
-  .timeline-event:nth-child(6),
-  .timeline-event:nth-child(7) {
+  .timeline-event:nth-child(2), .timeline-event:nth-child(3), .timeline-event:nth-child(5), .timeline-event:nth-child(6), .timeline-event:nth-child(7){
     margin-top: 20px;
   }
 
-  .timeline-event:nth-child(4) {
+  .timeline-event:nth-child(4){
     margin-top: 90px;
   }
 
-  .timeline-event-copy {
+  .timeline-event-copy{
     /* padding: 2em; */
     position: relative;
   }
@@ -1351,33 +1352,34 @@ svg {
     display: inline-block;
     margin-left: 65px;
     margin-top: -5px;
+    position: relative;
   }
 
-  .timeline-event-icon.on {
+  .timeline-event-icon.on{
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color: #f5a5cb;
+    background-color:  #F5A5CB;
   }
 
-  .timeline-event-thumbnail::before {
+  .timeline-event-thumbnail::before{
     content: attr(data-text);
     position: absolute;
-    top: -5px;
-    left: 65px;
-    color: #f5a5cb;
+    top: 0px;
+    left: 0px;
+    color: #F5A5CB;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
     transition: 0.7s ease-out;
   }
 
-  .timeline-event-thumbnail.on:before {
+  .timeline-event-thumbnail.on:before{
     width: 100%;
   }
 
-  .road_txt1 {
+  .road_txt1{
     font-size: 24px;
     height: 198px;
     border-left: 1px solid #fff;
@@ -1388,7 +1390,7 @@ svg {
     text-align: left;
   }
 
-  .road_txt2 {
+  .road_txt2{
     font-size: 24px;
     height: 380px;
     border-left: 1px solid #fff;
@@ -1399,13 +1401,13 @@ svg {
     text-align: left;
   }
 
-  .vvri1 {
+  .vvri1{
     position: absolute;
     top: 181px;
     left: 66px;
   }
 
-  .road_txt3 {
+  .road_txt3{
     font-size: 24px;
     height: 264px;
     border-left: 1px solid #fff;
@@ -1416,20 +1418,20 @@ svg {
     text-align: left;
   }
 
-  .logo_box {
+  .logo_box{
     display: flex;
     gap: 30px;
     margin-top: -170px;
     margin-left: 66px;
   }
 
-  .logo_box .close2::after {
-    content: "\00d7";
+  .logo_box .close2::after{
+    content: '\00d7';
     font-size: 70px;
     font-weight: 100;
   }
 
-  .road_txt4 {
+  .road_txt4{
     font-size: 24px;
     height: 162px;
     border-left: 1px solid #fff;
@@ -1440,7 +1442,7 @@ svg {
     text-align: left;
   }
 
-  .road_txt5 {
+  .road_txt5{
     font-size: 24px;
     height: 130px;
     border-left: 1px solid #fff;
@@ -1451,7 +1453,7 @@ svg {
     text-align: left;
   }
 
-  .road_txt6 {
+  .road_txt6{
     font-size: 24px;
     height: 344px;
     border-left: 1px solid #fff;
@@ -1462,13 +1464,13 @@ svg {
     text-align: left;
   }
 
-  .vvri2 {
+  .vvri2{
     position: absolute;
     top: 150px;
     left: 65px;
   }
 
-  .road_txt7 {
+  .road_txt7{
     font-size: 24px;
     height: 174px;
     border-left: 1px solid #fff;
@@ -1480,97 +1482,98 @@ svg {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .timeline-event:nth-child(4) {
+@media screen and (max-width: 767px){
+
+  .timeline-event:nth-child(4){
     margin-top: 40px;
   }
 
-  .timeline-event-thumbnail {
-    font-size: 20px;
-    margin-left: 55px;
+ .timeline-event-thumbnail{
+  font-size: 20px;
+  margin-left: 55px;
+ }
+
+ .timeline-event-icon{
+  width: 20px;
+  height: 20px;
+ }
+
+ .road_txt1{
+  font-size: 16px;
+  height: 123px;
+  padding-left: 34px;
+  padding-top: 15px;
+  margin-left: 19px;
   }
 
-  .timeline-event-icon {
-    width: 20px;
-    height: 20px;
+  .road_txt2{
+  font-size: 16px;
+  height: 236px;
+  padding-left: 34px;
+  padding-top: 15px;
+  margin-left: 19px;
   }
 
-  .road_txt1 {
-    font-size: 16px;
-    height: 123px;
-    padding-left: 34px;
-    padding-top: 15px;
-    margin-left: 19px;
-  }
-
-  .road_txt2 {
-    font-size: 16px;
-    height: 236px;
-    padding-left: 34px;
-    padding-top: 15px;
-    margin-left: 19px;
-  }
-
-  .vvri1 {
+  .vvri1{
     max-width: 100px;
     width: 100%;
     top: 130px;
     left: 52px;
   }
 
-  .road_txt3 {
-    font-size: 16px;
-    height: 158px;
-    padding-left: 34px;
-    padding-top: 15px;
-    margin-left: 19px;
+  .road_txt3{
+  font-size: 16px;
+  height: 158px;
+  padding-left: 34px;
+  padding-top: 15px;
+  margin-left: 19px;
   }
 
-  .logo_box {
+  .logo_box{
     display: flex;
     gap: 20px;
     margin-top: -100px;
     margin-left: 56px;
   }
-
-  .logo_box img {
+  
+  .logo_box img{
     max-width: 80px;
     width: 100%;
   }
 
-  .logo_box .close2::after {
-    content: "\00d7";
+  .logo_box .close2::after{
+    content: '\00d7';
     font-size: 50px;
     font-weight: 100;
     position: relative;
     top: 5px;
   }
 
-  .road_txt4 {
-    font-size: 16px;
-    height: 90px;
-    padding-left: 34px;
-    padding-top: 15px;
-    margin-left: 19px;
+  .road_txt4{
+  font-size: 16px;
+  height: 90px;
+  padding-left: 34px;
+  padding-top: 15px;
+  margin-left: 19px;
   }
 
-  .road_txt5 {
-    font-size: 16px;
-    height: 66px;
-    padding-left: 34px;
-    padding-top: 15px;
-    margin-left: 19px;
+  .road_txt5{
+  font-size: 16px;
+  height: 66px;
+  padding-left: 34px;
+  padding-top: 15px;
+  margin-left: 19px;
   }
 
-  .road_txt6 {
-    font-size: 16px;
-    height: 187px;
-    padding-left: 34px;
-    padding-top: 15px;
-    margin-left: 19px;
+  .road_txt6{
+  font-size: 16px;
+  height: 187px;
+  padding-left: 34px;
+  padding-top: 15px;
+  margin-left: 19px;
   }
 
-  .vvri2 {
+  .vvri2{
     max-width: 100px;
     width: 100%;
     position: absolute;
@@ -1578,48 +1581,23 @@ svg {
     left: 54px;
   }
 
-  .road_txt7 {
-    font-size: 16px;
-    height: 133px;
-    padding-left: 34px;
-    padding-top: 15px;
-    margin-left: 19px;
+  .road_txt7{
+  font-size: 16px;
+  height: 133px;
+  padding-left: 34px;
+  padding-top: 15px;
+  margin-left: 19px;
   }
 
-  .timeline-event-thumbnail::before {
+  .timeline-event-thumbnail::before{
     content: attr(data-text);
     position: absolute;
-    top: -4px;
-    left: 55px;
-    color: #f5a5cb;
+    top: 0px;
+    left: 0px;
+    color: #F5A5CB;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
     transition: 0.7s ease-out;
-  }
-}
-
-/* roadmap END */
-
-/* footer */
-
-footer {
-  padding: 15px 0;
-  background: #f8f8f8;
-}
-
-footer .foot_logo {
-  text-align: center;
-}
-
-@media screen and (max-width: 1024px) {
-  .foot_logo {
-    height: 52px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .foot_logo {
-    height: 40px;
   }
 }
