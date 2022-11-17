@@ -188,7 +188,7 @@ window.addEventListener("scroll", function () {
 
   else if (this.innerWidth < 767) {
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4200) {
+      if (value >= 3900) {
         timeOne[i].classList.add('on');
         conOne[i].classList.add('on');
       } else {
@@ -198,7 +198,7 @@ window.addEventListener("scroll", function () {
     }
       
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4400) {
+      if (value >= 4100) {
         timeTwo[i].classList.add('on');
         conTwo[i].classList.add('on');
       } else {
@@ -209,7 +209,7 @@ window.addEventListener("scroll", function () {
       
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4700) {
+      if (value >= 4400) {
         timeThree[i].classList.add('on');
         conThree[i].classList.add('on');
       } else {
@@ -220,7 +220,7 @@ window.addEventListener("scroll", function () {
 
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4900) {
+      if (value >= 4700) {
         timeFore[i].classList.add('on');
         conFore[i].classList.add('on');
       } else {
@@ -231,7 +231,7 @@ window.addEventListener("scroll", function () {
   
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5100) {
+      if (value >= 4900) {
         timeFive[i].classList.add('on');
         conFive[i].classList.add('on');
       } else {
@@ -242,7 +242,7 @@ window.addEventListener("scroll", function () {
     
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5400) {
+      if (value >= 5100) {
         timeSix[i].classList.add('on');
         conSix[i].classList.add('on');
       } else {
@@ -253,7 +253,7 @@ window.addEventListener("scroll", function () {
       
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5500) {
+      if (value >= 5300) {
         timeSeven[i].classList.add('on');
         conSeven[i].classList.add('on');
       } else {
