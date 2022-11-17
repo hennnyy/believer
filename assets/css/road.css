@@ -30,6 +30,7 @@
 
 .timeline_right{
   margin-top: 200px;
+  width: 50%;
 }
 
 .timeline-event_right {
@@ -150,6 +151,10 @@
 
 
 /* 왼쪽섹션 */
+
+.timeline_left{
+  width: 50%;
+}
 
 .timeline-event_left {
   position: relative;

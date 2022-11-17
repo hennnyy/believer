@@ -1035,6 +1035,7 @@ svg {
 
 .timeline_right{
   margin-top: 200px;
+  width: 50%;
 }
 
 .timeline-event_right {
@@ -1155,6 +1156,11 @@ svg {
 
 
 /* 왼쪽섹션 */
+
+.timeline_left{
+  width: 50%;
+}
+
 
 .timeline-event_left {
   position: relative;
