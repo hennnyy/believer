@@ -1056,7 +1056,9 @@ svg {
   /* padding: 2em; */
   position: relative;
   top: 0;
-  left: 0;
+  left: 60px;
+  text-align: right;
+  padding-right: 60px;
 }
 
 .timeline-event-copy_right p:not(.timeline-event-thumbnail_right) {
@@ -1075,10 +1077,11 @@ svg {
   background-color: #fff;
   display: block;
   position: absolute;
-  top: 106px;
-  left: 97%;
+  top: 105px;
+  left: 97.7%;
   width: 35px;
   height: 35px;
+  z-index: 100;
 }
 
 .timeline-event-thumbnail_right {
@@ -1094,8 +1097,9 @@ svg {
   -webkit-box-shadow: inset 0 0 0 0em #ef795a;
   box-shadow: inset 0 0 0 0em #ef795a;
   display: inline-block;
-  margin-left: 282px;
   margin-top: 100px;
+  position: relative;
+  margin-right: 60px;
 }
 
 .timeline-event-icon_right.on{
@@ -1109,8 +1113,9 @@ svg {
 .timeline-event-thumbnail_right::before{
   content: attr(data-text);
   position: absolute;
-  top: 100px;
-  left: 282px;
+  top: 0px;
+  /* left: -; */
+  padding-right: 60px;
   color: #F5A5CB;
   width: 0;
   overflow: hidden;
@@ -1120,6 +1125,7 @@ svg {
 
 .timeline-event-thumbnail_right.on:before{
   width: 100%;
+  /* left: -60px; */
 }
 
 
@@ -1127,9 +1133,9 @@ svg {
   font-size: 28px;
   border-right: 1px solid #fff;
   padding-top: 30px;
-  padding-right: 60px;
   margin-top: 20px;
   text-align: right;
+  padding-right: 60px;
 }
 
 .right1{
@@ -1147,8 +1153,9 @@ svg {
 .logo_box{
   display: flex;
   gap: 50px;
-  margin-left: 134px;
+  justify-content: end;
   margin-top: 40px;
+  padding-right: 60px;
 }
 
 .timeline-event_right_logo .close::after{
@@ -1279,10 +1286,9 @@ svg {
 
 /* //pc버전끝 */
 
-@media all and (min-width: 1025px) and (max-width: 1277px){
+@media all and (min-width: 1025px) and (max-width: 1400px){
   .timeline-event-thumbnail_right{
     font-size: 28px;
-    margin-left: 51%;
   }
 
   .timeline-event-thumbnail_left{
@@ -1304,13 +1310,11 @@ svg {
     left: -13px;
   }
 
-  .logo_box{
-    position: relative;
-    left: -68px;
-  }
+
 
   .timeline-event-thumbnail_right::before{
-  left: 51%;
+    /* left: 0px;
+    top: 0; */
   }
 }
 
@@ -1442,6 +1446,7 @@ svg {
 
   .logo_box{
     display: flex;
+    justify-content: start;
     gap: 30px;
     margin-top: -170px;
     margin-left: 66px;
@@ -1622,4 +1627,17 @@ svg {
     white-space: nowrap;
     transition: 0.2s ease-out;
   }
+}
+
+/* 로드맵 영어ver */
+
+.en_version .road_txt_left.left1{
+  height: 250px;
+}
+.en_version .road_txt_left.left4{
+  height: 330px;
+}
+
+.en_version .timeline-event_right:nth-child(1){
+  margin-top: 40px;
 }
