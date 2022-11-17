@@ -18,6 +18,10 @@ header .inner_container {
 .foot_logo a,
 .foot_logo img {
   height: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
 }
 .nav .depth1 {
   display: flex;
@@ -145,10 +149,18 @@ header .inner_container {
     height: 15px;
     background: #000;
   }
+  .foot_logo a,
+  .foot_logo img {
+  height: 45px;
+  }
 }
 @media screen and (max-width: 767px) {
   .logo {
     height: 38px;
+  }
+  .foot_logo a,
+  .foot_logo img {
+  height: 38px;
   }
 }
 /* main  */
