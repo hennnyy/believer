@@ -14,7 +14,9 @@ header .inner_container {
   padding: 0 20px;
 }
 .logo img,
-.logo a,
+.logo a{
+  width: 100%;
+}
 .foot_logo a,
 .foot_logo img {
   height: 100%;
@@ -59,7 +61,8 @@ header .inner_container {
   .lang {
     display: none;
   }
-  .logo {
+  .logo img,
+  .logo a {
     height: 45px;
   }
   .ghost {
@@ -155,7 +158,8 @@ header .inner_container {
   }
 }
 @media screen and (max-width: 767px) {
-  .logo {
+  .logo img,
+  .logo a {
     height: 38px;
   }
   .foot_logo a,
@@ -1390,7 +1394,7 @@ svg {
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    transition: 0.7s ease-out;
+    transition: 0.3s ease-out;
   }
 
   .timeline-event-thumbnail.on:before{
@@ -1616,6 +1620,6 @@ svg {
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    transition: 0.7s ease-out;
+    transition: 0.2s ease-out;
   }
 }

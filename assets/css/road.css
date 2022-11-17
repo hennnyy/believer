@@ -384,7 +384,7 @@
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    transition: 0.7s ease-out;
+    transition: 0.3s ease-out;
   }
 
   .timeline-event-thumbnail.on:before{
