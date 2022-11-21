@@ -108,7 +108,31 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// project 스크롤 영상 이벤트
+var playV = document.querySelectorAll(".video1");
+var playW = document.querySelectorAll(".video2");
 
+
+  window.addEventListener("scroll", function () {
+  var heightN = window.scrollY;
+  for (k = 0; k < playV.length; k++) {
+    if (heightN > 2000) {
+      playV[k].play();
+    } else {
+      playV[k].pause();
+    }
+    if (heightN > 2500) {
+      playW[k].play();
+    } else {
+      playW[k].pause();
+    }
+    if (heightN > 3500) {
+      playV[k].pause();
+      playW[k].pause();
+    }
+  }
+
+});
 
 // roadmap 스크롤 이벤트
 
@@ -302,7 +326,7 @@ window.addEventListener("scroll", function () {
 
   else if (this.innerWidth < 767) {
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4600) {
+      if (value >= 4000) {
         timeOne[i].classList.add('on');
         conOne[i].classList.add('on');
       } else {
@@ -312,7 +336,7 @@ window.addEventListener("scroll", function () {
     }
       
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4800) {
+      if (value >= 4200) {
         timeTwo[i].classList.add('on');
         conTwo[i].classList.add('on');
       } else {
@@ -323,7 +347,7 @@ window.addEventListener("scroll", function () {
       
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5000) {
+      if (value >= 4400) {
         timeThree[i].classList.add('on');
         conThree[i].classList.add('on');
       } else {
@@ -334,7 +358,7 @@ window.addEventListener("scroll", function () {
 
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5200) {
+      if (value >= 4600) {
         timeFore[i].classList.add('on');
         conFore[i].classList.add('on');
       } else {
@@ -345,7 +369,7 @@ window.addEventListener("scroll", function () {
   
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5500) {
+      if (value >= 4800) {
         timeFive[i].classList.add('on');
         conFive[i].classList.add('on');
       } else {
@@ -356,7 +380,7 @@ window.addEventListener("scroll", function () {
     
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5800) {
+      if (value >= 5000) {
         timeSix[i].classList.add('on');
         conSix[i].classList.add('on');
       } else {
@@ -367,7 +391,7 @@ window.addEventListener("scroll", function () {
       
   
     for (let i = 0; i < timeOne.length; i++){
-      if (value >= 6000) {
+      if (value >= 5200) {
         timeSeven[i].classList.add('on');
         conSeven[i].classList.add('on');
       } else {

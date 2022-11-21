@@ -752,7 +752,7 @@ svg {
 
 .pro_line2 {
   position: relative;
-  max-height: 730px;
+  /* max-height: 730px; */
 }
 
 .pro_line1::before,
@@ -1006,285 +1006,202 @@ svg {
 
 /* project END */
 
-/* roadmap */
 .road_tab{
-  display: none;
-}
-
-.road_section {
-  background-color: #000;
-  padding: 150px 0 135px;
-}
-
-.road_section .title {
-  color: #fff;
-  margin-bottom: 50px;
-}
-
-.road_pc{
-  max-width: 1440px;
-  margin: 0 auto;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-}
-
-
-/* Layout */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.timeline_right{
-  margin-top: 200px;
-  width: 50%;
-}
-
-.timeline-event_right {
-  position: relative;
-  padding-top: 148px;
-}
-.timeline-event_right:nth-child(4){
-  margin-top: 150px;
-}
-
-.timeline-event-copy_right {
-  position: relative;
-  top: 0;
-  text-align: right;
-  border-right: 1px solid #fff;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  margin-top: 20px;
-}
-
-.timeline-event-icon_right {
-  -moz-transition: -moz-transform 0.2s ease-in;
-  -o-transition: -o-transform 0.2s ease-in;
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #fff;
-  display: block;
-  position: absolute;
-  top: 105px;
-  left: 97.5%;
-  width: 35px;
-  height: 35px;
-  z-index: 100;
-}
-
-.timeline-event-thumbnail_right {
-  -moz-transition: box-shadow 0.5s ease-in 0.1s;
-  -o-transition: box-shadow 0.5s ease-in 0.1s;
-  -webkit-transition: box-shadow 0.5s ease-in;
-  -webkit-transition-delay: 0.1s;
-  transition: box-shadow 0.5s ease-in 0.1s;
-  color: white;
-  font-size: 35px;
-  background-color: black;
-  -moz-box-shadow: inset 0 0 0 0em #ef795a;
-  -webkit-box-shadow: inset 0 0 0 0em #ef795a;
-  box-shadow: inset 0 0 0 0em #ef795a;
-  display: inline-block;
-  position: relative;
-  margin-right: 60px;
-  top: -104px;
-}
-
-.timeline-event-icon_right.on{
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  background-color:  #F5A5CB;
-}
-
-.timeline-event-thumbnail_right::before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0px;
-  /* left: -; */
-  padding-right: 60px;
-  color: #F5A5CB;
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: 0.7s ease-out;
-}
-
-.timeline-event-thumbnail_right.on:before{
-  width: 100%;
-}
-
-
-.road_txt_right{
-  font-size: 28px;
-  text-align: right;
-  padding-right: 60px;
-  margin-top: -50px;
-}
-
-.logo_box{
-  display: flex;
-  gap: 50px;
-  justify-content: end;
-  margin-top: 40px;
-  padding-right: 60px;
-}
-
-.timeline-event_right_logo .close::after{
-  content: '\00d7';
-  font-size: 70px;
-  font-weight: 100;
-}
-
-
-
-/* 왼쪽섹션 */
-
-.timeline_left{
-  width: 50%;
-}
-
-.timeline-event_left {
-  position: relative;
-  padding-top: 53px;
-}
-
-.timeline-event_left:nth-child(2){
-  margin-top: 25px;
-}
-
-.timeline-event_left:nth-child(4){
-  margin-top: 275px;
-}
-
-.timeline-event_left:nth-child(6){
-  margin-top: 20px;
-}
-
-.timeline-event-copy_left {
-  position: relative;
-  top: -6px;
-  left: 0px;
-  border-left: 1px solid #fff;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  margin-top: 20px;
-}
-
-.timeline-event-icon_left {
-  -moz-transition: -moz-transform 0.2s ease-in;
-  -o-transition: -o-transform 0.2s ease-in;
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #fff;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: -17px;
-  width: 35px;
-  height: 35px;
-}
-
-.timeline-event-thumbnail_left {
-  -moz-transition: box-shadow 0.5s ease-in 0.1s;
-  -o-transition: box-shadow 0.5s ease-in 0.1s;
-  -webkit-transition: box-shadow 0.5s ease-in;
-  -webkit-transition-delay: 0.1s;
-  transition: box-shadow 0.5s ease-in 0.1s;
-  color: white;
-  font-size: 35px;
-  background-color: black;
-  -moz-box-shadow: inset 0 0 0 0em #ef795a;
-  -webkit-box-shadow: inset 0 0 0 0em #ef795a;
-  box-shadow: inset 0 0 0 0em #ef795a;
-  display: inline-block;
-  position: relative;
-  margin-left: 60px;
-  top: -109px;
-}
-
-.timeline-event-icon_left.on{
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  background-color:  #F5A5CB;
-}
-
-.timeline-event-thumbnail_left::before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: #F5A5CB;
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: 0.7s ease-in;
-}
-
-.timeline-event-thumbnail_left.on:before{
-  width: 100%;
-}
-
-.road_txt_left{
-  font-size: 28px;
-  padding-left: 60px;
-  margin-top: -50px;
-}
-
-.vvri_1{
-  position: relative;
-  top: -30px;
-  left: 60px;
-}
-
-.vvri_2{
-  margin-left: 50px;
-  margin-top: -20px;
-}
-
-/* //pc버전끝 */
-
-@media all and (min-width: 1025px) and (max-width: 1400px){
-  .timeline_right{
-    margin-top: 180px;
+    display: none;
   }
+  
+  .road_section {
+    background-color: #000;
+    padding: 150px 0 135px;
+  }
+  
+  .road_section .title {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  
+  .road_pc{
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  
+  /* Layout */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  .timeline-event{
+    position: relative;
+  }
+  
+  
+  .timeline-event-copy_right {
+    position: relative;
+    top: 17px;
+    width: 410px;
+    margin: 0 auto;
+  }
+  
+  .timeline-event-copy_left{
+    position: relative;
+    text-align: center;
+    margin-right: 332px;
+    top: 17px;
+  }
+
+  .icon_box{
+    position: relative;
+    width: 38px;
+    margin: 0 auto;
+    
+  }
+  .icon_box .timeline-event-icon {
+    -moz-transition: -moz-transform 0.2s ease-in;
+    -o-transition: -o-transform 0.2s ease-in;
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 2px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .timeline-event-icon.on{
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color:  #F5A5CB;
+  }
+  
+  .timeline-event-thumbnail{
+    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    -o-transition: box-shadow 0.5s ease-in 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in;
+    -webkit-transition-delay: 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s;
+    color: white;
+    font-size: 35px;
+    background-color: black;
+    -moz-box-shadow: inset 0 0 0 0em #ef795a;
+    -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+    box-shadow: inset 0 0 0 0em #ef795a;
+    display: inline-block;
+    position: relative;
+  }
+
   .timeline-event-thumbnail_right{
+    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    -o-transition: box-shadow 0.5s ease-in 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in;
+    -webkit-transition-delay: 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s;
+    color: white;
+    font-size: 35px;
+    background-color: black;
+    -moz-box-shadow: inset 0 0 0 0em #ef795a;
+    -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+    box-shadow: inset 0 0 0 0em #ef795a;
+    display: inline-block;
+    position: relative;
+    left: 68%;
+  }
+  
+  .timeline-event-thumbnail::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    color: #F5A5CB;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.7s ease-out;
+  }
+  
+  .timeline-event-thumbnail.on:before{
+    width: 100%;
+  }
+
+  .timeline-event-thumbnail_right::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    color: #F5A5CB;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.7s ease-out;
+  }
+  
+  .timeline-event-thumbnail.on:before{
+    width: 100%;
+  }
+  
+  
+  .content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .content li{
+    width: 50%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-top: 40px;
     font-size: 28px;
   }
 
-  .timeline-event-thumbnail_left{
-    font-size: 28px;
+  .solid_left {
+    border-left: 1px solid #fff;
+    padding-left: 60px;
   }
 
-  .road_txt_right, .road_txt_left{
-    font-size: 24px;
+  .solid_right{
+    border-right: 1px solid #fff;
+    text-align: right;
+    position: relative;
   }
 
-  .timeline-event-icon_right{
-    width: 28px;
-    height: 28px;
+  .solid_right .road_txt{
+    position: absolute;
+    right: 60px;
+  }
+  
+  .logo_box{
+    display: flex;
+		gap: 50px;
+    justify-content: end;
+    width: 100%;
+		margin-right: 60px;
   }
 
-  .timeline-event-icon_left{
-    width: 28px;
-    height: 28px;
-    left: -13px;
-  }
-}  
+  .logo_box .close::after {
+    content: '\00d7';
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.vvri_1, .vvri_2 {
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+  /* //pc버전끝 */
 
 @media screen and (max-width: 1024px){
   .road_pc{
@@ -1304,9 +1221,10 @@ svg {
 
   .timeline-event-copy{
     position: relative;
+		top: 10px;
     border-left: 1px solid #fff;
     padding-bottom: 60px;
-    margin-left: 23px;
+    margin-left: 19px;
   }
 
   .timeline-event-icon {
@@ -1321,8 +1239,8 @@ svg {
     background-color: #fff;
     display: block;
     position: absolute;
-    top: 0px;
-    left: 10px;
+    top: 15px;
+    left: 5px;
     width: 28px;
     height: 28px;
   }
@@ -1341,7 +1259,7 @@ svg {
     box-shadow: inset 0 0 0 0em #ef795a;
     display: inline-block;
     margin-left: 44px;
-    top: -58px;
+    top: -54px;
     position: relative;
   }
 
@@ -1373,6 +1291,7 @@ svg {
     font-size: 24px;
     text-align: left;
     padding-left: 40px;
+		margin-top: -30px;
   }
 
   .timeline-event-copy .vvri1{
@@ -1385,6 +1304,7 @@ svg {
     justify-content: start;
     gap: 30px;
     padding-left: 45px;
+		padding-top: 20px;
   }
 
   .logo_box .close2::after{
@@ -1393,7 +1313,7 @@ svg {
     font-weight: 100;
   }
 
-  .vvri2{
+  .vvri_2{
     margin-top: 20px;
     margin-left: 45px;
   }
@@ -1401,12 +1321,18 @@ svg {
 }
 
 @media screen and (max-width: 767px){
-  .timeline-event-copy{
+	.timeline-event{
+		margin-top: 0px;
+	}
+	.timeline-event-copy{
     padding-bottom: 30px;
+		margin-left: 14px;
+		top: 0px;
   }
   .timeline-event-thumbnail{
     font-size: 20px;
     margin-left: 30px;
+		top: -44px;
   }
   .timeline-event-icon{
     width: 20px;
@@ -1415,7 +1341,7 @@ svg {
   .timeline-event-copy .road_txt{
     font-size: 16px;
     padding-left: 30px;
-    margin-top: -15px;
+/*     margin-top: -15px; */
   }
 
   .timeline-event-copy .vvri1{
@@ -1434,8 +1360,9 @@ svg {
     width: 100%;
   }
 
-  .vvri2{
+  .vvri_2{
     margin-left: 30px;
+    width: 100px;
   }
 
   .logo_box .close2::after {
@@ -1443,3 +1370,36 @@ svg {
     font-weight: 100;
 }
 }
+
+/* <!-- 여기부터 영어ver --> */
+
+.en_version .timeline-event_right:nth-child(1){
+  margin-top: 85px;
+}
+
+.en_version .timeline-event_right:nth-child(3){
+  margin-top: 16px;
+}
+
+.en_version .timeline-event_left:nth-child(3){
+  margin-top: 85px;
+}
+
+.en_version .timeline-event_left:nth-child(4){
+  margin-top: 365px;
+}
+
+.en_version .timeline-event_left:nth-child(6){
+  margin-top: 121px;
+}
+/* 
+@media screen and (max-width: 1024px){
+	.en_version .timeline-event-copy .road_txt{
+    font-size: 24px;
+    text-align: left;
+    padding-left: 40px;
+  }
+} */
+
+
+

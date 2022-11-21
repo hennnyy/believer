@@ -33,27 +33,25 @@
 
 
 // project 스크롤 영상 이벤트
-var playV = document.querySelectorAll(".video1");
-var playW = document.querySelectorAll(".video2");
+var playV = document.querySelector(".video1");
+var playW = document.querySelector(".video2");
 
 
   window.addEventListener("scroll", function () {
   var heightN = window.scrollY;
-  for (k = 0; k < playV.length; k++) {
     if (heightN > 2000) {
-      playV[k].play();
+      playV.play();
     } else {
-      playV[k].pause();
+      playV.pause();
     }
     if (heightN > 2500) {
-      playW[k].play();
+      playW.play();
     } else {
-      playW[k].pause();
+      playW.pause();
     }
     if (heightN > 3500) {
-      playV[k].pause();
-      playW[k].pause();
+      playV.pause();
+      playW.pause();
     }
-  }
 
 });
