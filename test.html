@@ -5,11 +5,463 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/common.css">
-  <link rel="stylesheet" href="./assets/css/road.css">
 </head>
 <body>
-         <section class="road_section" id="roadmap">
+  <div class="wrap">
+      <header>
+        <div class="inner_container">
+          <h1 class="logo">
+            <a href="javascript:;">
+              <img src="/wp-content/uploads/2022/11/logo_header.png" alt="빌리버 로고" />
+            </a>
+          </h1>
+          <nav class="nav">
+            <ul class="depth1">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#project">PROJECT</a></li>
+              <li><a href="#roadmap">ROADMAP</a></li>
+            </ul>
+          </nav>
+          <div class="lang">
+            <ul class="lang_list">
+              <li><a href="javascript:;" class="ko_btn lang_btn">KO</a></li>
+              <li><a href="javascript:;" class="en_btn lang_btn">EN</a></li>
+            </ul>
+          </div>
+          <div class="ghost">
+            <div class="ghost_btn">
+              <input type="checkbox" id="menuBtn" class="menu_btn" />
+              <label for="menuBtn" class="btn_line">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <div class="ghost_menu">
+              <ul class="ghost_list">
+                <li class="m_underline menu_list">
+                  <a href="#home">HOME</a>
+                </li>
+                <li class="m_underline menu_list">
+                  <a href="#about">ABOUT</a>
+                </li>
+                <li class="m_underline menu_list">
+                  <a href="#project">PROJECT</a>
+                </li>
+                <li class="m_underline menu_list">
+                  <a href="#roadmap">ROADMAP</a>
+                </li>
+              </ul>
+              <ul class="ghost_lang">
+                <li class="m_rightline menu_list">
+                  <a href="javascript:;" class="ko_btn lang_btn">KO</a>
+                </li>
+                <li class="menu_list">
+                  <a href="javascript:;" class="en_btn lang_btn">EN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 메인영역  -->
+      <section class="section main" id="home">
+        <div class="video-wrap">
+          <video playsinline autoplay loop muted poster="./assets/images/video_image.jpg">
+            <source src="/wp-content/uploads/2022/11/main_vvri_1.mp4" />
+          </video>
+        </div>
+      </section>
+      <!-- 메인영역  end  -->
+      <!-- ABOUT 영역  -->
+      <section class="about-wrap" id="about">
+        <div class="ko_version">
+          <div class="inner_container">
+            <h2 class="title">ABOUT VVRI</h2>
+          </div>
+          <div class="about-contents">
+            <div class="about-img">
+              <div class="about_gradient"></div>
+              <div class="about_item about_opacity">
+                <div class="about_veri">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_veri_02.png"
+                    alt="베리 이미지"
+                  />
+                </div>
+                <div class="about_gear">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_gear.png"
+                    alt="톱니바퀴 이미지"
+                  />
+                </div>
+                <div class="about_circle circle_floating">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_circle_01.png"
+                    alt="타원형 이미지"
+                  />
+                </div>
+                <div class="about_chacha chacha_floating">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_chacha.png"
+                    alt="차차 이미지"
+                  />
+                </div>
+                <div class="about_veri_text">
+                  <p class="veri_effect">VVRI</p>
+                </div>
+                <div class="about_chacha_text">
+                  <p class="chacha_effect">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      viewBox="0 0 400 400"
+                      class="pc_only"
+                    >
+                      <defs>
+                        <!-- The text path: see links above regarding coordinate system -->
+                        <path
+                          d="M 38 197 C 227 186, 250 250, 410 490"
+                          id="pc_path"
+                        ></path>
+                      </defs>
+
+                      <text>
+                        <!-- This is the magic -->
+                        <textPath startOffset="0" xlink:href="#pc_path">
+                          베리의 애완묘 '챠챠 cha-cha'
+                        </textPath>
+                      </text>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="about-txt">
+              <h3 class="intro_title">Who Am I?</h3>
+              <p class="sub_title">
+                CODE NAME: 베리 (VVRI) <br />
+                AGE: 7META (maybe, 23~4 in earth age?)<br />
+                HEIGHT: 167cm<br />
+                WEIGHT: Secret<br />
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a href="#">
+                    <img src="/wp-content/uploads/2022/11/instagram.png" alt="instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/wp-content/uploads/2022/11/twitter.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/wp-content/uploads/2022/11/youtube.png" alt="youtube" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="en_version">
+          <div class="inner_container">
+            <h2 class="title">ABOUT VVRI</h2>
+          </div>
+          <div class="about-contents">
+            <div class="about-img">
+              <div class="about_gradient"></div>
+              <div class="about_item about_opacity">
+                <div class="about_veri">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_veri_02.png"
+                    alt="베리 이미지"
+                  />
+                </div>
+                <div class="about_gear">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_gear.png"
+                    alt="톱니바퀴 이미지"
+                  />
+                </div>
+                <div class="about_circle circle_floating">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_circle_01.png"
+                    alt="타원형 이미지"
+                  />
+                </div>
+                <div class="about_chacha chacha_floating">
+                  <img
+                    src="/wp-content/uploads/2022/11/about_chacha.png"
+                    alt="차차 이미지"
+                  />
+                </div>
+                <div class="about_veri_text">
+                  <p class="veri_effect">VVRI</p>
+                </div>
+                <div class="about_chacha_text">
+                  <p class="chacha_effect">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      viewBox="0 0 400 400"
+                      class="pc_only"
+                    >
+                      <defs>
+                        <!-- The text path: see links above regarding coordinate system -->
+                        <path
+                          d="M 38 197 C 300 186, 380 300, 450 1500"
+                          id="en_pc_path"
+                        ></path>
+                      </defs>
+
+                      <text>
+                        <!-- This is the magic -->
+                        <textPath startOffset="0" xlink:href="#en_pc_path">
+                          VVRI's pet cat and her best friend 'cha-cha'
+                        </textPath>
+                      </text>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="about-txt">
+              <h3 class="intro_title">Who Am I?</h3>
+              <p class="sub_title">
+                CODE NAME: VVRI <br />
+                AGE: 7META (maybe, 23~4 in earth age?)<br />
+                HEIGHT: 167cm<br />
+                WEIGHT: Secret<br />
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a href="#">
+                    <img src="/wp-content/uploads/2022/11/instagram.png" alt="instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/wp-content/uploads/2022/11/twitter.png" alt="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/wp-content/uploads/2022/11/youtube.png" alt="youtube" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT 영역 end -->
+
+      <!-- project -->
+      <section class="pro_section" id="project">
+        <div class="ko_version">
+          <div class="inner_container">
+            <h2 class="title">PROJECT<br />VVRI</h2>
+            <div class="project_box">
+              <div class="pro_left">
+                <p class="left_txt">OUR PROJECT</p>
+              </div>
+              <div class="pro_right">
+                <div class="pro_line1 pro_line">
+                  <div class="right_one">
+                    <div class="one_txt one_item">
+                      <h3 class="sub_title">PROJECT VVRI</h3>
+                      <p class="sub_desc desc">
+                        버츄얼 아바타 ‘베리(VVRI)’는 2021년 (주)코믹스브이가
+                        (주)빌리버로 사명을 변경하게 되면서 메타버스 콘텐츠
+                        사업의 다양성과 확장성을 위하여 새롭게 시도된
+                        프로젝트이다.<br /><br />
+
+                        일본에서는 ‘키즈나 아이’, ‘홀로라이브’ 등 인터넷 방송의
+                        새로운 장르로 이미 떠오르고 있었으며, 한국에서는 현재
+                        ‘이세계 아이돌’이 ‘우왁굳’을 중심으로 버츄얼 유튜버로
+                        활동 중이다.
+                        <br /><br />
+                        이러한 상황에서 빌리버의 ‘베리’는 스트리밍 중심의 방송
+                        콘텐츠가 아닌 메타버스 콘텐츠 전문 기업의 타이틀을 살려
+                        IP자체의 활용을 위해 기술 테스트, 콘텐츠 기획, 교육 연구
+                        등 다양한 시도 중에 있다.
+                        <br /><br />
+                        특히, 베리를 (주)빌리버만의 소유물이 아닌 2차 창작을
+                        풀어놓고 자유롭게 활용할 수 있도록 준비 중이다.
+                      </p>
+                    </div>
+                    <div class="one_img one_item">
+                      <video playsinline autoplay
+                        loop
+                        muted="muted"
+                        src="/wp-content/uploads/2022/11/pro_vvri1.mp4"
+                        class="video1"
+                      ></video>
+                    </div>
+                  </div>
+                </div>
+                <div class="pro_line2 pro_line">
+                  <div class="right_two">
+                    <div class="two_img two_item">
+                      <video playsinline autoplay
+                        loop
+                        muted
+                        src="/wp-content/uploads/2022/11/pro_vvri2.mp4"
+                        class="video2"
+                      ></video>
+                    </div>
+                    <div class="two_txt two_item">
+                      <h3 class="sub_title">PROJECT NFT</h3>
+                      <p class="sub _desc desc">
+                        베리의 NFT는 2022년 PROJECT인 ‘메타돌 베리의 <드림걸>
+                        프로젝트의 사업 일환으로 시작되었다.<br /><br />
+
+                        ‘메타돌 베리의 <드림걸> 프로젝트’ 는 전남에 기반을 둔
+                        베리가 잘 알려지지 않은 전남의 명소를 알리기 위해 시작한
+                        프로젝트로, 총 6편의 예능형 방송 콘텐츠가 제작되어 공개
+                        예정이다.<br /><br />
+
+                        전남에서 활동중인 총 6명의 엠버서더(버스커)가 참여하는
+                        이 프로젝트는 고흥, 보성, 광양, 순천, 여수, 장흥, 함평
+                        총 7개의 전남시군도시를 돌아다니며 베리의 시선으로
+                        바라보는 전남을 소개한다.<br /><br />
+
+                        이번 NFT는 총 7개의 시군도시를 여행하는 베리의 추억을
+                        담은 NFT로 베리가 처음으로 시도하는 NFT라는 점에서
+                        발행의 의미가 크다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right_lounge">
+                  <h3 class="sub_title">VVRI LOUNGE</h3>
+                  <div class="lounge_flex_box">
+                    <div class="xrc">
+                      <div class="xrc_img">
+                        <img
+                          src="/wp-content/uploads/2022/11/project_XRCloud.jpg"
+                          alt="xrc_img"
+                        />
+                      </div>
+                      <div class="lounge_txt_box">
+                        <h4 class="lounge_txt_title">가상공간 (XRCloud)</h4>
+                        <p class="xrc_txt_desc desc">
+                          mozilla hubs 공간은 NFT 구매고객을 대상으로<br />VIP룸으로
+                          입장 가능합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vrc">
+                      <div class="vrc_img">
+                        <img
+                          src="/wp-content/uploads/2022/11/project_VRChat.jpg"
+                        />
+                      </div>
+                      <div class="lounge_txt_box">
+                        <h4 class="lounge_txt_title">
+                          메타버스 공간 (VR CHAT)
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="en_version">
+      <div class="inner_container">
+        <h2 class="title">PROJECT<br />VVRI</h2>
+        <div class="project_box">
+          <div class="pro_left">
+            <p class="left_txt">OUR PROJECT</p>
+          </div>
+          <div class="pro_right">
+            <div class="pro_line1 pro_line ">
+              <div class="right_one">
+                <div class="one_txt one_item">
+                  <h3 class="sub_title">PROJECT VVRI</h3>
+                  <p class="sub_desc desc">
+                    The virtual avatar ‘VVRI’ is a newly attempted project for the diversity and scalability of the metaverse content business as COMIXV Co., Ltd. changed its name to BELIVVR Co., Ltd. in 2021.<br /><br />
+                    In Japan, it was already emerging as a new genre of Internet broadcasting such as ‘Kizuna AI’ and ‘Holo Live’. In Korea, 'Idol from Another World' is currently active as the most well-known virtual YouTuber with 'woowakgood'.<br /><br />
+                    In this situation, Beliver's 'VVRI' is making various attempts, such as technology testing, content planning, and educational research, to utilize IP itself by taking advantage of the titles of metaverse content companies, rather than streaming-oriented broadcasting content.<br /><br />
+                    In particular, VVRI is being prepared so that it can be freely used by releasing secondary creations that are not owned by Beliver Co., Ltd.
+                  </p>
+                </div>
+                <div class="one_img one_item">
+                  <video playsinline autoplay
+                        loop
+                        muted="muted"
+                        src="/wp-content/uploads/2022/11/pro_vvri3.mp4"
+                        class="video1"
+                      ></video>
+                </div>
+              </div> 
+              </div>
+              <div class="pro_line2 pro_line">
+                <div class="right_two">
+                  <div class="two_img two_item">
+                    <video playsinline autoplay
+                        loop
+                        muted
+                        src="/wp-content/uploads/2022/11/pro_vvri4.mp4"
+                        class="video2"
+                      ></video>
+                  </div>
+                  <div class="two_txt two_item">
+                    <h3 class="sub_title">PROJECT NFT</h3>
+                    <p class="sub _desc desc">
+                      VVRI's NFT was started as part of the 2022 project 'Metadol VVRI's <Dream Girl> Project'.<br /><br />
+                      'Metadol VVRI's <Dream Girl> Project' is a project started by Jeonnam-based VVRI to publicize the lesser-known attractions in Jeollanam.<br /><br />
+                      This project, in which a total of 6 ambassadors (buskers) from Jeollanam participate, introduces Jeollanam as seen through the eyes of VVRI while visiting 7 cities and towns in Jeollanam, including Goheung, Boseong, Gwangyang, Suncheon, Yeosu, Jangheung, and Hampyeong.<br /><br />
+                      This NFT is an NFT that contains the memories of VVRI traveling in a total of 7 cities, towns and cities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+            <div class="right_lounge">
+               <h3 class="sub_title">VVRI LOUNGE</h3>
+              <div class="lounge_flex_box">
+                <a href="javascript:(0)">
+                  <div class="xrc">
+                    <div class="xrc_img">
+                      <img src="/wp-content/uploads/2022/11/project_XRCloud.jpg" alt="xrc_img">
+                    </div>
+                    <div class="lounge_txt_box">
+                      <h4 class="lounge_txt_title">METAVERSE SPACE (XRCloud)</h4>
+                      <p class="xrc_txt_desc desc">Customers who purchase NFT can enter<br />
+                      the Mozilla Hubs VIP room.</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="javascript:(0)">
+                  <div class="vrc">
+                    <div class="vrc_img">
+                      <img src="/wp-content/uploads/2022/11/project_VRChat.jpg" alt="vrc_img">
+                    </div>
+                    <div class="lounge_txt_box">
+                      <h4 class="lounge_txt_title">VR SPACE (VRChat)</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+      <!-- project END-->
+
+      <!-- roadmap -->
+       <section class="road_section" id="roadmap">
         <div class="ko_version">
           <div class="inner_container">
             <h2 class="title">ROADMAP<br />VVRI</h2>
@@ -718,278 +1170,23 @@
               </div>
             </div>
         </div>
- 
+
+           
+       
+          
       </section>
- <script>
-  
-window.addEventListener("scroll", function () {
-  let value = window.scrollY;
-  console.log(value);
-  let timeOne = document.querySelectorAll('.time1');
-  let conOne = document.querySelectorAll('.con1');
-  // 
-  let timeTwo = document.querySelectorAll('.time2');
-  let conTwo = document.querySelectorAll('.con2');
-  //
-  let timeThree = document.querySelectorAll('.time3');
-  let conThree = document.querySelectorAll('.con3');
-  //
-  let timeFore = document.querySelectorAll('.time4');
-  let conFore = document.querySelectorAll('.con4');
-  //
-  let timeFive = document.querySelectorAll('.time5');
-  let conFive = document.querySelectorAll('.con5');
-  //
-  let timeSix = document.querySelectorAll('.time6');
-  let conSix = document.querySelectorAll('.con6');
-  //
-  let timeSeven = document.querySelectorAll('.time7');
-  let conSeven = document.querySelectorAll('.con7');
+      <!-- roadmap END-->
+      <footer>
+        <div class="foot_logo">
+          <a href="javascript:;">
+            <img src="/wp-content/uploads/2022/11/logo_footer.png" alt="빌리버 로고" />
+          </a>
+        </div>
+      </footer>
+    </div>
 
-  // console.log(timeline);
-  //왼쪽 스크롤 영역
-  if (this.innerWidth > 1023) {
-    for (let j = 0; j < timeOne.length; j++) {
-      if (value >= 300) {
-        timeOne[j].classList.add('on');
-        conOne[j].classList.add('on');
-      } else {
-        timeOne[j].classList.remove('on');
-        conOne[j].classList.remove('on');
-      }
-    }
-  
-    // 두번째스크롤
-    for (let i = 0; i < timeOne.length; i++) {
-      if (value >= 500) {
-        timeTwo[i].classList.add('on');
-        conTwo[i].classList.add('on');
-      } else {
-        timeTwo[i].classList.remove('on');
-        conTwo[i].classList.remove('on');
-      }
-    }
-
-    // 세번째스크롤
-    for (let i = 0; i < timeThree.length; i++) {
-      if (value >= 700) {
-        timeThree[i].classList.add('on');
-        conThree[i].classList.add('on');
-      } else {
-        timeThree[i].classList.remove('on');
-        conThree[i].classList.remove('on');
-      }
-    }
-    
-    //오른쪽 스크롤 영역
-    for (let i = 0; i < timeFore.length; i++) {
-      if (value >= 200) {
-        timeFore[i].classList.add('on');
-        conFore[i].classList.add('on');
-      } else {
-        timeFore[i].classList.remove('on');
-        conFore[i].classList.remove('on');
-      }
-    }
-  
-    // 두번째스크롤
-    for (let i = 0; i < timeOne.length; i++) {
-
-      if (value >= 400) {
-        timeFive[i].classList.add('on');
-        conFive[i].classList.add('on');
-      } else {
-        timeFive[i].classList.remove('on');
-        conFive[i].classList.remove('on');
-      }
-    }
-  
-    // 세번째스크롤
-    for (let i = 0; i < timeOne.length; i++) {
-      if (value >= 1000) {
-        timeSix[i].classList.add('on');
-        conSix[i].classList.add('on');
-      } else {
-        timeSix[i].classList.remove('on');
-        conSix[i].classList.remove('on');
-      }
-    }
-
-    // 네번째스크롤
-    for (let i = 0; i < timeOne.length; i++) {
-      if (value >= 1300) {
-        timeSeven[i].classList.add('on');
-        conSeven[i].classList.add('on');
-      } else {
-        timeSeven[i].classList.remove('on');
-        conSeven[i].classList.remove('on');
-      }
-    }
-  }
-    
-
-  // 여기부터 테블릿
-
-  else if (this.innerWidth > 767) {
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 200) {
-        timeOne[i].classList.add('on');
-        conOne[i].classList.add('on');
-      } else {
-        timeOne[i].classList.remove('on');
-        conOne[i].classList.remove('on');
-      }
-    }
-      
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 400) {
-        timeTwo[i].classList.add('on');
-        conTwo[i].classList.add('on');
-      } else {
-        timeTwo[i].classList.remove('on');
-        conTwo[i].classList.remove('on');
-      }
-    }
-      
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 600) {
-        timeThree[i].classList.add('on');
-        conThree[i].classList.add('on');
-      } else {
-        timeThree[i].classList.remove('on');
-        conThree[i].classList.remove('on');
-      }
-    }
-
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 800) {
-        timeFore[i].classList.add('on');
-        conFore[i].classList.add('on');
-      } else {
-        timeFore[i].classList.remove('on');
-        conFore[i].classList.remove('on');
-      }
-    }
-  
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 1000) {
-        timeFive[i].classList.add('on');
-        conFive[i].classList.add('on');
-      } else {
-        timeFive[i].classList.remove('on');
-        conFive[i].classList.remove('on');
-      }
-    }
-    
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 1200) {
-        timeSix[i].classList.add('on');
-        conSix[i].classList.add('on');
-      } else {
-        timeSix[i].classList.remove('on');
-        conSix[i].classList.remove('on');
-      }
-    }
-      
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 1300) {
-        timeSeven[i].classList.add('on');
-        conSeven[i].classList.add('on');
-      } else {
-        timeSeven[i].classList.remove('on');
-        conSeven[i].classList.remove('on');
-      }
-    }
-  } 
-
-  // 여기부터 모바일
-
-  else if (this.innerWidth < 767) {
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 3900) {
-        timeOne[i].classList.add('on');
-        conOne[i].classList.add('on');
-      } else {
-        timeOne[i].classList.remove('on');
-        conOne[i].classList.remove('on');
-      }
-    }
-      
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4100) {
-        timeTwo[i].classList.add('on');
-        conTwo[i].classList.add('on');
-      } else {
-        timeTwo[i].classList.remove('on');
-        conTwo[i].classList.remove('on');
-      }
-    }
-      
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4400) {
-        timeThree[i].classList.add('on');
-        conThree[i].classList.add('on');
-      } else {
-        timeThree[i].classList.remove('on');
-        conThree[i].classList.remove('on');
-      }
-    }
-
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4700) {
-        timeFore[i].classList.add('on');
-        conFore[i].classList.add('on');
-      } else {
-        timeFore[i].classList.remove('on');
-        conFore[i].classList.remove('on');
-      }
-    }
-  
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 4900) {
-        timeFive[i].classList.add('on');
-        conFive[i].classList.add('on');
-      } else {
-        timeFive[i].classList.remove('on');
-        conFive[i].classList.remove('on');
-      }
-    }
-    
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5100) {
-        timeSix[i].classList.add('on');
-        conSix[i].classList.add('on');
-      } else {
-        timeSix[i].classList.remove('on');
-        conSix[i].classList.remove('on');
-      }
-    }
-      
-  
-    for (let i = 0; i < timeOne.length; i++){
-      if (value >= 5300) {
-        timeSeven[i].classList.add('on');
-        conSeven[i].classList.add('on');
-      } else {
-        timeSeven[i].classList.remove('on');
-        conSeven[i].classList.remove('on');
-      }
-    }
-  } 
-
-});
-
-
-
- </script>
+<script src="/wp-content/themes/twentytwenty/assets/js/main.js"></script>
+<script src="/wp-content/themes/twentytwenty/assets/js/project.js"></script>
+<script src="/wp-content/themes/twentytwenty/assets/js/road.js"></script>
 </body>
 </html>
