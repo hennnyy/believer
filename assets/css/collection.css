@@ -30,9 +30,10 @@
   flex-wrap: wrap;
   width: calc(50% - 20px);
   text-align: center;
+  border: 1px solid #BFBFBF;
   --transition-duration: 500ms;
   --transition-easing: ease-out;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  /* border: 1px solid rgba(255, 255, 255, 0.6); */
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
   box-shadow: 0px calc(var(--size) / 6) calc(var(--size) / 3) rgba(0, 0, 0, 0.1);
@@ -71,12 +72,9 @@
 
 .list_text_box{
   padding: 50px 30px;
-  border: 1px solid #BFBFBF;
-  margin-top: -6px;
-  height: 300px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 
 /* .collection_list li:hover .list_text_box{
@@ -100,7 +98,7 @@
 	border-top: 1px solid  #BFBFBF;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1140px){
+@media screen and (min-width: 1025px) and (max-width: 1240px){
   .name{
     width: 85%;
   }
@@ -108,9 +106,7 @@
 
 @media screen and (max-width: 1024px){
   .list_text_box{
-    padding: 20px 10px;
-    margin-top: -8px;
-    height: 350px;
+    padding: 30px 20px;
   }
 
   .ticket_txt{
@@ -151,6 +147,10 @@
 
   .name{
   width: 90%;
+  }
+
+  .intro_txt{
+  margin-top: 20px;
   }
 }
 
