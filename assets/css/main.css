@@ -16,6 +16,7 @@ header .inner_container {
 .logo img,
 .logo a{
   width: 100%;
+  -webkit-appearance: none;
 }
 .foot_logo a,
 .foot_logo img {
