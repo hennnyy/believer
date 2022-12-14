@@ -13,6 +13,7 @@ body {
   color: #000;
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -45,19 +46,16 @@ li {
 
 /* 폰트 설정 */
 @import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+
 @font-face {
   font-family: "EsaManru";
   font-weight: 700;
   font-style: normal;
   src: url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.ttf")
-      format("truetype");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -65,10 +63,8 @@ li {
   font-family: "SCoreDream";
   font-weight: 300;
   font-style: normal;
-  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff)
-      format("woff");
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream3.woff) format("woff");
   font-display: swap;
 }
 
@@ -76,10 +72,8 @@ li {
   font-family: "SCoreDream";
   font-weight: 500;
   font-style: normal;
-  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff)
-      format("woff");
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format("woff");
   font-display: swap;
 }
 
@@ -87,10 +81,8 @@ li {
   font-family: "SCoreDream";
   font-weight: 700;
   font-style: normal;
-  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff)
-      format("woff");
+  src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream7.woff) format("woff");
   font-display: swap;
 }
 
@@ -99,14 +91,10 @@ li {
   font-weight: 800;
   font-style: normal;
   src: url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.ttf")
-      format("truetype");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/score/SCoreDreamHeavy.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -116,21 +104,26 @@ li {
   font-weight: 700;
   font-family: "EsaManru";
 }
+
 .intro_title {
   font-size: 35px;
   font-weight: 700;
 }
+
 .sub_title {
   font-size: 28px;
   font-weight: 700;
 }
+
 .desc {
   font-size: 18px;
   font-weight: 400;
 }
+
 .pc_only {
   display: block;
 }
+
 .ta_only,
 .mo_only {
   display: none;
@@ -141,19 +134,24 @@ li {
   .title {
     font-size: 60px;
   }
+
   .intro_title {
     font-size: 28px;
   }
+
   .sub_title {
     font-size: 20px;
   }
+
   .desc {
     font-size: 16px;
   }
+
   .pc_only,
   .mo_only {
     display: none;
   }
+
   .ta_only {
     display: block;
   }
@@ -164,19 +162,24 @@ li {
   .title {
     font-size: 36px;
   }
+
   .intro_title {
     font-size: 24px;
   }
+
   .sub_title {
     font-size: 18px;
   }
+
   .desc {
     font-size: 16px;
   }
+
   .pc_only,
   .ta_only {
     display: none;
   }
+
   .mo_only {
     display: block;
   }
@@ -187,9 +190,11 @@ li {
 .black {
   color: #021d25;
 }
+
 .lightGray {
   color: #eeeeee;
 }
+
 .white {
   color: #fff;
 }
@@ -197,4 +202,18 @@ li {
 /* 언어별 디스플레이 */
 .en_version {
   display: none;
+}
+
+.ticket_banner .mo_img {
+  display: none;
+}
+
+@media(max-width: 767px) {
+  .ticket_banner .pc_img {
+    display: none;
+  }
+
+  .ticket_banner .mo_img {
+    display: block;
+  }
 }
